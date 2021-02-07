@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-07T16:19:57.238Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36" etag="BldRbbo2ClIdsiM29LeF" version="14.2.9" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-02-07T17:03:19.497Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36" etag="SisCDcskEIumPFgTaZ4_" version="14.2.9" type="github" pages="3">
   <diagram id="vRT_eRokYRHo_6Neqv87" name="Git Branch Strategy">
     <mxGraphModel dx="1422" dy="2008" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -133,7 +133,7 @@
         <mxCell id="2TDEm1gCoJN3PPdsnzrM-2" value="Server1: linuxvmjenkins (jenkins master)&lt;br&gt;What is installed?&lt;br&gt;- Jenkins&lt;br&gt;- Java&lt;br&gt;- NodeJS" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" vertex="1" parent="2TDEm1gCoJN3PPdsnzrM-1">
           <mxGeometry x="180" y="70" width="330" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="2TDEm1gCoJN3PPdsnzrM-3" value="Server2: linuxvmdevops (hosting web apps)&lt;br&gt;What is installed?&lt;br&gt;- NodeJS&lt;br&gt;-Postgres dB (for Sonar)&lt;br&gt;- Sonarqb&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#0f2fff&quot;&gt;Its secondary purpose it to server as a Jenkins-Agent to offload the build load from Jenkins master.&lt;br&gt;&lt;br&gt;Its turtiary purpose is to server as Sonar repository server.&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" vertex="1" parent="2TDEm1gCoJN3PPdsnzrM-1">
+        <mxCell id="2TDEm1gCoJN3PPdsnzrM-3" value="Server2: linuxvmdevops (hosting web apps)&lt;br&gt;What is installed?&lt;br&gt;- NodeJS&lt;br&gt;-Postgres dB (for SonarQube)&lt;br&gt;- SonarQube&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#0f2fff&quot;&gt;Its secondary purpose it to server as a Jenkins-Agent to offload the build load from Jenkins master.&lt;br&gt;&lt;br&gt;Its turtiary purpose is to server as Sonar repository server.&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" vertex="1" parent="2TDEm1gCoJN3PPdsnzrM-1">
           <mxGeometry x="40" y="310" width="330" height="160" as="geometry" />
         </mxCell>
         <mxCell id="2TDEm1gCoJN3PPdsnzrM-4" value="Server3: linuxvmdocker (runs docker containers and K8)&lt;br&gt;What is installed?&lt;br&gt;- NodeJS&lt;br&gt;-Docker&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#0f27ff&quot;&gt;Its secondary purpose it to server as a Jenkins-Agent to offload the build load from Jenkins master.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" vertex="1" parent="2TDEm1gCoJN3PPdsnzrM-1">
