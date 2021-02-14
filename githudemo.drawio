@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-07T17:19:02.551Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36" etag="uA_cYCDFfX6LIgocENDO" version="14.2.9" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-02-14T03:37:11.982Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="Kz8OiJyFbwA6DlXIwfPz" version="14.3.1" type="github" pages="5">
   <diagram id="vRT_eRokYRHo_6Neqv87" name="Git Branch Strategy">
     <mxGraphModel dx="1422" dy="2008" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -95,61 +95,32 @@
       <root>
         <mxCell id="4t8CFKjB1VwMFFXsPzah-0" />
         <mxCell id="4t8CFKjB1VwMFFXsPzah-1" parent="4t8CFKjB1VwMFFXsPzah-0" />
-        <mxCell id="4t8CFKjB1VwMFFXsPzah-2" value="Github" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="4t8CFKjB1VwMFFXsPzah-1">
+        <mxCell id="4t8CFKjB1VwMFFXsPzah-2" value="Github" style="rounded=1;whiteSpace=wrap;html=1;" parent="4t8CFKjB1VwMFFXsPzah-1" vertex="1">
           <mxGeometry x="50" y="100" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4t8CFKjB1VwMFFXsPzah-3" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="4t8CFKjB1VwMFFXsPzah-1" source="4t8CFKjB1VwMFFXsPzah-2" target="4t8CFKjB1VwMFFXsPzah-4">
+        <mxCell id="4t8CFKjB1VwMFFXsPzah-3" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="4t8CFKjB1VwMFFXsPzah-1" source="4t8CFKjB1VwMFFXsPzah-2" target="4t8CFKjB1VwMFFXsPzah-4" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="250" y="190" as="sourcePoint" />
             <mxPoint x="300" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4t8CFKjB1VwMFFXsPzah-4" value="Package" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="4t8CFKjB1VwMFFXsPzah-1">
+        <mxCell id="4t8CFKjB1VwMFFXsPzah-4" value="Package" style="rounded=1;whiteSpace=wrap;html=1;" parent="4t8CFKjB1VwMFFXsPzah-1" vertex="1">
           <mxGeometry x="390" y="100" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4t8CFKjB1VwMFFXsPzah-5" value="Dev Env" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="4t8CFKjB1VwMFFXsPzah-1">
+        <mxCell id="4t8CFKjB1VwMFFXsPzah-5" value="Dev Env" style="rounded=1;whiteSpace=wrap;html=1;" parent="4t8CFKjB1VwMFFXsPzah-1" vertex="1">
           <mxGeometry x="650" y="100" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4t8CFKjB1VwMFFXsPzah-6" value="QA Env" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="4t8CFKjB1VwMFFXsPzah-1">
+        <mxCell id="4t8CFKjB1VwMFFXsPzah-6" value="QA Env" style="rounded=1;whiteSpace=wrap;html=1;" parent="4t8CFKjB1VwMFFXsPzah-1" vertex="1">
           <mxGeometry x="650" y="240" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4t8CFKjB1VwMFFXsPzah-7" value="UAT Env" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="4t8CFKjB1VwMFFXsPzah-1">
+        <mxCell id="4t8CFKjB1VwMFFXsPzah-7" value="UAT Env" style="rounded=1;whiteSpace=wrap;html=1;" parent="4t8CFKjB1VwMFFXsPzah-1" vertex="1">
           <mxGeometry x="650" y="360" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4t8CFKjB1VwMFFXsPzah-8" value="PROD Env" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="4t8CFKjB1VwMFFXsPzah-1">
+        <mxCell id="4t8CFKjB1VwMFFXsPzah-8" value="PROD Env" style="rounded=1;whiteSpace=wrap;html=1;" parent="4t8CFKjB1VwMFFXsPzah-1" vertex="1">
           <mxGeometry x="650" y="490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4t8CFKjB1VwMFFXsPzah-9" value="" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" vertex="1" parent="4t8CFKjB1VwMFFXsPzah-1">
+        <mxCell id="4t8CFKjB1VwMFFXsPzah-9" value="" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" parent="4t8CFKjB1VwMFFXsPzah-1" vertex="1">
           <mxGeometry x="220" y="220" width="120" height="60" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="lyX-pWgliTdIiwrZPe9J" name="DevOps Environment">
-    <mxGraphModel dx="1422" dy="839" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="2TDEm1gCoJN3PPdsnzrM-0" />
-        <mxCell id="2TDEm1gCoJN3PPdsnzrM-1" parent="2TDEm1gCoJN3PPdsnzrM-0" />
-        <mxCell id="2TDEm1gCoJN3PPdsnzrM-2" value="Server1: linuxvmjenkins (jenkins master)&lt;br&gt;What is installed?&lt;br&gt;- Jenkins&lt;br&gt;- Java&lt;br&gt;- NodeJS" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" vertex="1" parent="2TDEm1gCoJN3PPdsnzrM-1">
-          <mxGeometry x="180" y="70" width="330" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="2TDEm1gCoJN3PPdsnzrM-3" value="Server2: linuxvmdevops (hosting web apps)&lt;br&gt;What is installed?&lt;br&gt;- NodeJS&lt;br&gt;-Postgres dB (for SonarQube)&lt;br&gt;- SonarQube&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#0f2fff&quot;&gt;Its secondary purpose it to server as a Jenkins-Agent to offload the build load from Jenkins master.&lt;br&gt;&lt;br&gt;Its turtiary purpose is to server as Sonar repository server.&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" vertex="1" parent="2TDEm1gCoJN3PPdsnzrM-1">
-          <mxGeometry x="40" y="310" width="330" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="2TDEm1gCoJN3PPdsnzrM-4" value="Server3: linuxvmdocker (runs docker containers and K8)&lt;br&gt;What is installed?&lt;br&gt;- NodeJS&lt;br&gt;-Docker&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#0f27ff&quot;&gt;Its secondary purpose it to server as a Jenkins-Agent to offload the build load from Jenkins master.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" vertex="1" parent="2TDEm1gCoJN3PPdsnzrM-1">
-          <mxGeometry x="440" y="310" width="330" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="2TDEm1gCoJN3PPdsnzrM-5" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="2TDEm1gCoJN3PPdsnzrM-1" source="2TDEm1gCoJN3PPdsnzrM-3" target="2TDEm1gCoJN3PPdsnzrM-2">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="380" as="sourcePoint" />
-            <mxPoint x="440" y="330" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="2TDEm1gCoJN3PPdsnzrM-6" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="2TDEm1gCoJN3PPdsnzrM-1" source="2TDEm1gCoJN3PPdsnzrM-4" target="2TDEm1gCoJN3PPdsnzrM-2">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="215" y="320" as="sourcePoint" />
-            <mxPoint x="355" y="200" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
@@ -159,64 +130,170 @@
       <root>
         <mxCell id="xPY5KsMp9x8M8TseFcRT-0" />
         <mxCell id="xPY5KsMp9x8M8TseFcRT-1" parent="xPY5KsMp9x8M8TseFcRT-0" />
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-3" value="Jenkins - Master&amp;nbsp;&lt;br&gt;(Build Server)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;shadow=1;strokeColor=#6EFF69;" vertex="1" parent="xPY5KsMp9x8M8TseFcRT-1">
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-3" value="Jenkins - Master&amp;nbsp;&lt;br&gt;(Build Server)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;shadow=1;strokeColor=#6EFF69;" parent="xPY5KsMp9x8M8TseFcRT-1" vertex="1">
           <mxGeometry x="280" y="220" width="200" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-4" value="&lt;span&gt;Jenkins Agent1&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" vertex="1" parent="xPY5KsMp9x8M8TseFcRT-1">
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-4" value="&lt;span&gt;Jenkins Agent1&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" parent="xPY5KsMp9x8M8TseFcRT-1" vertex="1">
           <mxGeometry x="230" y="450" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-5" value="Jenkins Agent2" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" vertex="1" parent="xPY5KsMp9x8M8TseFcRT-1">
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-5" value="Jenkins Agent2" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" parent="xPY5KsMp9x8M8TseFcRT-1" vertex="1">
           <mxGeometry x="400" y="450" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-6" value="Github&lt;br&gt;(Code Respository)" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" vertex="1" parent="xPY5KsMp9x8M8TseFcRT-1">
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-6" value="Github&lt;br&gt;(Code Respository)" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" parent="xPY5KsMp9x8M8TseFcRT-1" vertex="1">
           <mxGeometry x="40" y="230" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-7" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.messenger;shadow=1;strokeColor=#6EFF69;" vertex="1" parent="xPY5KsMp9x8M8TseFcRT-1">
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-7" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.messenger;shadow=1;strokeColor=#6EFF69;" parent="xPY5KsMp9x8M8TseFcRT-1" vertex="1">
           <mxGeometry x="57" y="433.2" width="82.60000000000001" height="76.80000000000001" as="geometry" />
         </mxCell>
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-8" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="xPY5KsMp9x8M8TseFcRT-1" target="xPY5KsMp9x8M8TseFcRT-6">
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-8" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="xPY5KsMp9x8M8TseFcRT-1" target="xPY5KsMp9x8M8TseFcRT-6" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="100" y="430" as="sourcePoint" />
             <mxPoint x="440" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-9" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="xPY5KsMp9x8M8TseFcRT-1" source="xPY5KsMp9x8M8TseFcRT-6" target="xPY5KsMp9x8M8TseFcRT-3">
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-9" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="xPY5KsMp9x8M8TseFcRT-1" source="xPY5KsMp9x8M8TseFcRT-6" target="xPY5KsMp9x8M8TseFcRT-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="450" as="sourcePoint" />
             <mxPoint x="440" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-10" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="xPY5KsMp9x8M8TseFcRT-1" source="xPY5KsMp9x8M8TseFcRT-4" target="xPY5KsMp9x8M8TseFcRT-3">
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-10" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="xPY5KsMp9x8M8TseFcRT-1" source="xPY5KsMp9x8M8TseFcRT-4" target="xPY5KsMp9x8M8TseFcRT-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="450" as="sourcePoint" />
             <mxPoint x="440" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-11" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="xPY5KsMp9x8M8TseFcRT-1" source="xPY5KsMp9x8M8TseFcRT-5" target="xPY5KsMp9x8M8TseFcRT-3">
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-11" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="xPY5KsMp9x8M8TseFcRT-1" source="xPY5KsMp9x8M8TseFcRT-5" target="xPY5KsMp9x8M8TseFcRT-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="450" as="sourcePoint" />
             <mxPoint x="440" y="400" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-12" value="jFrog (Repository for Deployables)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;shadow=1;strokeColor=#6EFF69;" vertex="1" parent="xPY5KsMp9x8M8TseFcRT-1">
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-12" value="jFrog (Repository for Deployables)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;shadow=1;strokeColor=#6EFF69;" parent="xPY5KsMp9x8M8TseFcRT-1" vertex="1">
           <mxGeometry x="600" y="70" width="120" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-13" value="SonarQube (Code Quality Scan)" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" vertex="1" parent="xPY5KsMp9x8M8TseFcRT-1">
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-13" value="SonarQube (Code Quality Scan)" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" parent="xPY5KsMp9x8M8TseFcRT-1" vertex="1">
           <mxGeometry x="620" y="230" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-15" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="xPY5KsMp9x8M8TseFcRT-1" source="xPY5KsMp9x8M8TseFcRT-13" target="xPY5KsMp9x8M8TseFcRT-3">
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-15" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="xPY5KsMp9x8M8TseFcRT-1" source="xPY5KsMp9x8M8TseFcRT-13" target="xPY5KsMp9x8M8TseFcRT-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="450" as="sourcePoint" />
             <mxPoint x="440" y="400" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-16" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=60;exitPerimeter=0;" edge="1" parent="xPY5KsMp9x8M8TseFcRT-1" source="xPY5KsMp9x8M8TseFcRT-12" target="xPY5KsMp9x8M8TseFcRT-3">
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-16" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=60;exitPerimeter=0;" parent="xPY5KsMp9x8M8TseFcRT-1" source="xPY5KsMp9x8M8TseFcRT-12" target="xPY5KsMp9x8M8TseFcRT-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="630" y="270" as="sourcePoint" />
             <mxPoint x="490" y="270" as="targetPoint" />
             <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="lyX-pWgliTdIiwrZPe9J" name="DevOps Environment">
+    <mxGraphModel dx="1422" dy="839" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="2TDEm1gCoJN3PPdsnzrM-0" />
+        <mxCell id="2TDEm1gCoJN3PPdsnzrM-1" parent="2TDEm1gCoJN3PPdsnzrM-0" />
+        <mxCell id="AAzaNnk3eC9rhXwKI9nl-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.16;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="2TDEm1gCoJN3PPdsnzrM-1" source="2TDEm1gCoJN3PPdsnzrM-2" target="AAzaNnk3eC9rhXwKI9nl-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2TDEm1gCoJN3PPdsnzrM-2" value="Server1: linuxvmjenkins (jenkins master)&lt;br&gt;What is installed?&lt;br&gt;- Jenkins&lt;br&gt;- Java&lt;br&gt;- NodeJS" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" parent="2TDEm1gCoJN3PPdsnzrM-1" vertex="1">
+          <mxGeometry x="180" y="70" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="2TDEm1gCoJN3PPdsnzrM-3" value="Server2: linuxvmdevops (hosting web apps)&lt;br&gt;What is installed?&lt;br&gt;- NodeJS&lt;br&gt;-Postgres dB (for SonarQube)&lt;br&gt;- SonarQube&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#0f2fff&quot;&gt;Its secondary purpose it to server as a Jenkins-Agent to offload the build load from Jenkins master.&lt;br&gt;&lt;br&gt;Its turtiary purpose is to server as Sonar repository server.&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" parent="2TDEm1gCoJN3PPdsnzrM-1" vertex="1">
+          <mxGeometry x="40" y="310" width="330" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="2TDEm1gCoJN3PPdsnzrM-4" value="Server3: linuxvmdocker (runs docker containers and K8)&lt;br&gt;What is installed?&lt;br&gt;- NodeJS&lt;br&gt;-Docker&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#0f27ff&quot;&gt;Its secondary purpose it to server as a Jenkins-Agent to offload the build load from Jenkins master.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" parent="2TDEm1gCoJN3PPdsnzrM-1" vertex="1">
+          <mxGeometry x="440" y="310" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="2TDEm1gCoJN3PPdsnzrM-5" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="2TDEm1gCoJN3PPdsnzrM-1" source="2TDEm1gCoJN3PPdsnzrM-3" target="2TDEm1gCoJN3PPdsnzrM-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="380" as="sourcePoint" />
+            <mxPoint x="440" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2TDEm1gCoJN3PPdsnzrM-6" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="2TDEm1gCoJN3PPdsnzrM-1" source="2TDEm1gCoJN3PPdsnzrM-4" target="2TDEm1gCoJN3PPdsnzrM-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="215" y="320" as="sourcePoint" />
+            <mxPoint x="355" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AAzaNnk3eC9rhXwKI9nl-0" value="JFrog" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="2TDEm1gCoJN3PPdsnzrM-1">
+          <mxGeometry x="640" y="50" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AAzaNnk3eC9rhXwKI9nl-1" value="" style="endArrow=classic;html=1;" edge="1" parent="2TDEm1gCoJN3PPdsnzrM-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="450" as="sourcePoint" />
+            <mxPoint x="440" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="A1QMZUFXR3CR2ZOYnkdE" name="Puppet">
+    <mxGraphModel dx="1038" dy="624" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="b7oMv21rg4yaAJEI27WI-0" />
+        <mxCell id="b7oMv21rg4yaAJEI27WI-1" parent="b7oMv21rg4yaAJEI27WI-0" />
+        <mxCell id="b7oMv21rg4yaAJEI27WI-2" value="Puppet Master Server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="b7oMv21rg4yaAJEI27WI-1">
+          <mxGeometry x="20" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b7oMv21rg4yaAJEI27WI-3" value="Node1&amp;nbsp;&lt;br&gt;(Puppet Agent)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="b7oMv21rg4yaAJEI27WI-1">
+          <mxGeometry x="440" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b7oMv21rg4yaAJEI27WI-4" value="Node1&amp;nbsp;&lt;br&gt;(Puppet Agent)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="b7oMv21rg4yaAJEI27WI-1">
+          <mxGeometry x="440" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b7oMv21rg4yaAJEI27WI-5" value="Node1&amp;nbsp;&lt;br&gt;(Puppet Agent)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="b7oMv21rg4yaAJEI27WI-1">
+          <mxGeometry x="440" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b7oMv21rg4yaAJEI27WI-9" value="Transactions:&lt;br&gt;1. Node agent requests SSL and Facts to Master&lt;br&gt;2. Server sends catalog of modules to Agent&lt;br&gt;3. Agent sends status report to master" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="b7oMv21rg4yaAJEI27WI-1">
+          <mxGeometry x="20" y="30" width="330" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="b7oMv21rg4yaAJEI27WI-11" value="Maintains the Node Registry and the list of Modules for each Node." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="b7oMv21rg4yaAJEI27WI-1">
+          <mxGeometry x="30" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b7oMv21rg4yaAJEI27WI-12" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="b7oMv21rg4yaAJEI27WI-1" source="b7oMv21rg4yaAJEI27WI-2" target="b7oMv21rg4yaAJEI27WI-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="180" as="sourcePoint" />
+            <mxPoint x="420" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b7oMv21rg4yaAJEI27WI-13" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="b7oMv21rg4yaAJEI27WI-1" source="b7oMv21rg4yaAJEI27WI-2" target="b7oMv21rg4yaAJEI27WI-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="320" as="sourcePoint" />
+            <mxPoint x="430" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b7oMv21rg4yaAJEI27WI-14" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="b7oMv21rg4yaAJEI27WI-1" source="b7oMv21rg4yaAJEI27WI-2" target="b7oMv21rg4yaAJEI27WI-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="450" as="sourcePoint" />
+            <mxPoint x="260" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b7oMv21rg4yaAJEI27WI-15" value="Puppet Master&amp;nbsp;&lt;br&gt;(linuxvmsonarjfrog)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="b7oMv21rg4yaAJEI27WI-1">
+          <mxGeometry x="350" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b7oMv21rg4yaAJEI27WI-16" value="Puppet Agent1&lt;br&gt;(linuxvmdocker)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="b7oMv21rg4yaAJEI27WI-1">
+          <mxGeometry x="210" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b7oMv21rg4yaAJEI27WI-17" value="Puppet Agent2&lt;br&gt;(linuxvmdevops)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="b7oMv21rg4yaAJEI27WI-1">
+          <mxGeometry x="510" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b7oMv21rg4yaAJEI27WI-18" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="b7oMv21rg4yaAJEI27WI-1" source="b7oMv21rg4yaAJEI27WI-16" target="b7oMv21rg4yaAJEI27WI-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="690" as="sourcePoint" />
+            <mxPoint x="400" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b7oMv21rg4yaAJEI27WI-19" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="b7oMv21rg4yaAJEI27WI-1" source="b7oMv21rg4yaAJEI27WI-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="690" as="sourcePoint" />
+            <mxPoint x="410" y="600" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
