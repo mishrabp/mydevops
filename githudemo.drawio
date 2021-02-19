@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-19T12:10:58.187Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="So2g4LmcJ7sLu6gGMEoi" version="14.3.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-02-19T12:14:03.669Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="xhWJYVJYlSnWTs-7CuQu" version="14.3.1" type="github" pages="4">
   <diagram id="vRT_eRokYRHo_6Neqv87" name="Git Branch Strategy">
     <mxGraphModel dx="1038" dy="1793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -107,7 +107,7 @@
         <mxCell id="prSBz7KRY1Gi-vIPP2q3-6" value="&lt;b&gt;Server3 (linuxvmdevopsnode1)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="prSBz7KRY1Gi-vIPP2q3-1">
           <mxGeometry x="570" y="390" width="226" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="prSBz7KRY1Gi-vIPP2q3-8" value="&lt;b&gt;JFrog&lt;/b&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#CCFFFF;" vertex="1" parent="prSBz7KRY1Gi-vIPP2q3-1">
+        <mxCell id="prSBz7KRY1Gi-vIPP2q3-8" value="&lt;b&gt;JFrog - Artifactory&lt;/b&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#CCFFFF;" vertex="1" parent="prSBz7KRY1Gi-vIPP2q3-1">
           <mxGeometry x="560" y="50" width="190" height="70" as="geometry" />
         </mxCell>
         <mxCell id="prSBz7KRY1Gi-vIPP2q3-10" value="&lt;b&gt;Server4 (linuxvmconfgmaster)&lt;br&gt;Configuration Management Master&lt;br&gt;&lt;/b&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#CCFFFF;" vertex="1" parent="prSBz7KRY1Gi-vIPP2q3-1">
@@ -167,19 +167,19 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="n0y5btQBjbtWhB8JeQAY" name="CI Pipeline">
+  <diagram id="n0y5btQBjbtWhB8JeQAY" name="Jenkins Setup">
     <mxGraphModel dx="1038" dy="624" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="xPY5KsMp9x8M8TseFcRT-0" />
         <mxCell id="xPY5KsMp9x8M8TseFcRT-1" parent="xPY5KsMp9x8M8TseFcRT-0" />
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-3" value="Jenkins - Master&amp;nbsp;&lt;br&gt;(Build Server)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;shadow=1;strokeColor=#6EFF69;" parent="xPY5KsMp9x8M8TseFcRT-1" vertex="1">
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-3" value="Jenkins - Master&amp;nbsp;&lt;br&gt;(Build Server - linuxvmdevopsmaster)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;shadow=1;strokeColor=#6EFF69;" parent="xPY5KsMp9x8M8TseFcRT-1" vertex="1">
           <mxGeometry x="280" y="220" width="200" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-4" value="&lt;span&gt;Jenkins Agent1&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" parent="xPY5KsMp9x8M8TseFcRT-1" vertex="1">
-          <mxGeometry x="230" y="450" width="120" height="60" as="geometry" />
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-4" value="&lt;span&gt;Jenkins Agent1 (&lt;/span&gt;linuxvmdevopsnode1&lt;span&gt;)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" parent="xPY5KsMp9x8M8TseFcRT-1" vertex="1">
+          <mxGeometry x="190" y="450" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xPY5KsMp9x8M8TseFcRT-5" value="Jenkins Agent2" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" parent="xPY5KsMp9x8M8TseFcRT-1" vertex="1">
-          <mxGeometry x="400" y="450" width="120" height="60" as="geometry" />
+        <mxCell id="xPY5KsMp9x8M8TseFcRT-5" value="Jenkins Agent2&lt;br&gt;(linuxvmdevopsnode2)" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" parent="xPY5KsMp9x8M8TseFcRT-1" vertex="1">
+          <mxGeometry x="400" y="450" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="xPY5KsMp9x8M8TseFcRT-6" value="Github&lt;br&gt;(Code Respository)" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;strokeColor=#6EFF69;" parent="xPY5KsMp9x8M8TseFcRT-1" vertex="1">
           <mxGeometry x="40" y="230" width="120" height="60" as="geometry" />
@@ -230,6 +230,15 @@
             <mxPoint x="630" y="270" as="sourcePoint" />
             <mxPoint x="490" y="270" as="targetPoint" />
             <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lXP-vVuornC9Z0KY5Dja-0" value="&lt;b&gt;Jenkins Dynamic Build Agent&lt;br&gt;on Azure - bibhumsn&lt;/b&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#0AFFCE;" vertex="1" parent="xPY5KsMp9x8M8TseFcRT-1">
+          <mxGeometry x="60" y="40" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lXP-vVuornC9Z0KY5Dja-1" value="" style="endArrow=classic;html=1;entryX=0.55;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="xPY5KsMp9x8M8TseFcRT-1" source="xPY5KsMp9x8M8TseFcRT-3" target="lXP-vVuornC9Z0KY5Dja-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="350" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
