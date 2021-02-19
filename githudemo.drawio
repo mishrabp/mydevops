@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-19T12:14:03.669Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="xhWJYVJYlSnWTs-7CuQu" version="14.3.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-02-19T12:16:34.066Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="D8k44JA0ifIMNFuH5QjA" version="14.3.1" type="github" pages="5">
   <diagram id="vRT_eRokYRHo_6Neqv87" name="Git Branch Strategy">
     <mxGraphModel dx="1038" dy="1793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -104,7 +104,7 @@
         <mxCell id="prSBz7KRY1Gi-vIPP2q3-5" value="&lt;b&gt;Server2 (linuxvmdevopsnode1)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="prSBz7KRY1Gi-vIPP2q3-1">
           <mxGeometry x="250" y="390" width="226" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="prSBz7KRY1Gi-vIPP2q3-6" value="&lt;b&gt;Server3 (linuxvmdevopsnode1)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="prSBz7KRY1Gi-vIPP2q3-1">
+        <mxCell id="prSBz7KRY1Gi-vIPP2q3-6" value="&lt;b&gt;Server3 (linuxvmdevopsnode2)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="prSBz7KRY1Gi-vIPP2q3-1">
           <mxGeometry x="570" y="390" width="226" height="90" as="geometry" />
         </mxCell>
         <mxCell id="prSBz7KRY1Gi-vIPP2q3-8" value="&lt;b&gt;JFrog - Artifactory&lt;/b&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#CCFFFF;" vertex="1" parent="prSBz7KRY1Gi-vIPP2q3-1">
@@ -236,6 +236,44 @@
           <mxGeometry x="60" y="40" width="220" height="80" as="geometry" />
         </mxCell>
         <mxCell id="lXP-vVuornC9Z0KY5Dja-1" value="" style="endArrow=classic;html=1;entryX=0.55;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="xPY5KsMp9x8M8TseFcRT-1" source="xPY5KsMp9x8M8TseFcRT-3" target="lXP-vVuornC9Z0KY5Dja-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="350" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="8QzmzCO1nmwwOoNSzeiX" name="Ansible Setup">
+    <mxGraphModel dx="1038" dy="624" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="NMF6XNty-ZE-a0kYwR0T-0" />
+        <mxCell id="NMF6XNty-ZE-a0kYwR0T-1" parent="NMF6XNty-ZE-a0kYwR0T-0" />
+        <mxCell id="KBkAuI97enkl-fxbIcuu-0" value="&lt;b&gt;Server4 (linuxvmconfgmaster)&lt;br&gt;Ansible Master&lt;br&gt;&lt;/b&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#CCFFFF;" vertex="1" parent="NMF6XNty-ZE-a0kYwR0T-1">
+          <mxGeometry x="20" y="270" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="RXk9p9HhknalBtLMGnGM-0" value="&lt;b&gt;Server1 (linuxvmdevopsmaster)&lt;br&gt;Dev Ops Master&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NMF6XNty-ZE-a0kYwR0T-1">
+          <mxGeometry x="444" y="70" width="226" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="RXk9p9HhknalBtLMGnGM-1" value="&lt;b&gt;Server2 (linuxvmdevopsnode1)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NMF6XNty-ZE-a0kYwR0T-1">
+          <mxGeometry x="444" y="270" width="226" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="RXk9p9HhknalBtLMGnGM-2" value="&lt;b&gt;Server3 (linuxvmdevopsnode2)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NMF6XNty-ZE-a0kYwR0T-1">
+          <mxGeometry x="444" y="470" width="226" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="RXk9p9HhknalBtLMGnGM-3" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="NMF6XNty-ZE-a0kYwR0T-1" source="KBkAuI97enkl-fxbIcuu-0" target="RXk9p9HhknalBtLMGnGM-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="350" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RXk9p9HhknalBtLMGnGM-4" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="NMF6XNty-ZE-a0kYwR0T-1" source="KBkAuI97enkl-fxbIcuu-0" target="RXk9p9HhknalBtLMGnGM-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="350" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RXk9p9HhknalBtLMGnGM-5" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="NMF6XNty-ZE-a0kYwR0T-1" source="KBkAuI97enkl-fxbIcuu-0" target="RXk9p9HhknalBtLMGnGM-2">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="350" as="sourcePoint" />
             <mxPoint x="440" y="300" as="targetPoint" />
