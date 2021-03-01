@@ -45,7 +45,6 @@ services:
 
     sonarqube:
         container_name: sonarqube
-        command: /bin/sh -c "sonaquebe.env.sh"
         restart: always
         image: "sonarqube:8.2-community"
         ports:
