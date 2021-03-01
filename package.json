@@ -1,0 +1,21 @@
+{
+  "name": "mydevops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docker:start:master": "sudo docker-compose  -f docker-compose-devopsmasterlinuxvm.yml up -d",
+    "docker:stop:master": "sudo docker-compose  -f docker-compose-devopsmasterlinuxvm.yml down",
+    "start": "sudo docker-compose  -f docker-compose-devopsmasterlinuxvm.yml up -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishrabp/MyDevOps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mishrabp/MyDevOps/issues"
+  },
+  "homepage": "https://github.com/mishrabp/MyDevOps#readme"
+}
