@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docker:start:master": "sudo bash ./sonaquebe.env && sudo docker-compose  -f docker-compose-devopsmasterlinuxvm.yml up -d",
+    "docker:start:master": "sudo bash ./sonaquebe.env.sh && sudo docker-compose  -f docker-compose-devopsmasterlinuxvm.yml up -d",
     "docker:stop:master": "sudo docker-compose  -f docker-compose-devopsmasterlinuxvm.yml down",
     "start": "sudo docker-compose  -f docker-compose-devopsmasterlinuxvm.yml up -d"
   },
