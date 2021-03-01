@@ -50,9 +50,9 @@ services:
         ports:
             - "9006:9000"
         environment:
-            - SONAR_JDBC_URL='jdbc:sqlserver://devopsmasterlinuxvm.centralus.cloudapp.azure.com:9005;databaseName=sonarqube'
-            - SONAR_JDBC_USERNAME='sonar'
-            - SONAR_JDBC_PASSWORD='passw0rd!'
+            - SONAR_JDBC_URL="jdbc:sqlserver://devopsmasterlinuxvm.centralus.cloudapp.azure.com:9005;databaseName=sonarqube"
+            - SONAR_JDBC_USERNAME="sonar"
+            - SONAR_JDBC_PASSWORD="passw0rd!"
         volumes:
             - /dockerdata/sonarqube/conf:/opt/sonarqube/conf
             - /dockerdata/sonarqube/data:/opt/sonarqube/data
