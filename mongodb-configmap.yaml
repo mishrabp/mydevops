@@ -4,4 +4,4 @@ metadata:
   name: mongodb-configmap
   namespace: bibhu
 data:
-  database_url: mongodb-service
+  database_url: mongodb
