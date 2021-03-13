@@ -3,22 +3,19 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   labels: 
-    app: nginx
-#specification for deployment
-spec:
-  replicas: 3 #no of pod replicas needed.
+    app: nginx #label applied to
+spec: #specification for deployment
+  replicas: 2 #no of pod replicas needed.
   selector:
     matchLabels:
-      app: nginx
-  #template applies to Pod
-  template: 
+      app: nginx #label applied to replicaset. all pods with the same replicaset level are grouped for service layer to consume.
+  template: #template applies to Pod
     metadata:
       labels:
-        app: nginx
-    #specification is the blueprint of a Pod
-    spec:
+        app: nginx #label applied to Pod
+    spec: #specification is the blueprint of a Pod
       containers: 
       - name: nginx
         image: nginx:1.16
         ports:
-        - containerPort: 8080     
+        - containerPort: 80 #open on K8 cluster network     
