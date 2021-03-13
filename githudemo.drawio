@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-02-19T12:18:30.598Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="IMIjfPsmOgn2pGLwukTD" version="14.3.1" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-03-13T14:45:17.175Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="ZqVnsIC6lry-4aK_ew2b" version="14.4.6" type="github" pages="6">
   <diagram id="vRT_eRokYRHo_6Neqv87" name="Git Branch Strategy">
-    <mxGraphModel dx="1038" dy="1793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -342,6 +342,35 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="440" y="690" as="sourcePoint" />
             <mxPoint x="410" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="wv-vSnf7nvXLUobPiHNd" name="ngiox">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="FWXctDFDnn4qD9VgC576-0" />
+        <mxCell id="FWXctDFDnn4qD9VgC576-1" parent="FWXctDFDnn4qD9VgC576-0" />
+        <mxCell id="FWXctDFDnn4qD9VgC576-2" value="ngios master server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="FWXctDFDnn4qD9VgC576-1">
+          <mxGeometry x="150" y="200" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FWXctDFDnn4qD9VgC576-3" value="Nagios Agent on Server1 (NPRE)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="FWXctDFDnn4qD9VgC576-1">
+          <mxGeometry x="520" y="120" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FWXctDFDnn4qD9VgC576-4" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;Nagios Agent on Server2 (NPRE)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="FWXctDFDnn4qD9VgC576-1">
+          <mxGeometry x="520" y="260" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FWXctDFDnn4qD9VgC576-5" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="FWXctDFDnn4qD9VgC576-1" source="FWXctDFDnn4qD9VgC576-2" target="FWXctDFDnn4qD9VgC576-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="430" as="sourcePoint" />
+            <mxPoint x="610" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWXctDFDnn4qD9VgC576-6" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="FWXctDFDnn4qD9VgC576-1" source="FWXctDFDnn4qD9VgC576-2" target="FWXctDFDnn4qD9VgC576-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="430" as="sourcePoint" />
+            <mxPoint x="610" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
