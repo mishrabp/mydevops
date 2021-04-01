@@ -1,3 +1,5 @@
+#this YAML is to setup devops dockers on devopsmasterlinuxvm.centralus.cloudapp.azure.com
+#pre-requisite for this setup is docker and docker compose on the VM
 version: "3"
 services:
     jenkins:
