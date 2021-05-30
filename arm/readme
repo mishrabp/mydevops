@@ -1,0 +1,18 @@
+ARM - Azure Resource Manager
+
+ARM is built on JSON. So it has some inheritted issues
+- No easy way to add comments
+- A lot of noise in the script (simple things sometimes are hard to do)
+- Functions within the strings
+- Becomes hard to maintain as it grows
+- Requires hardcoded resource ID's to use secrets from key vault
+- Limited support for configurations and working with resources after creation
+    - E.g. no way to add a secret to a key vault
+
+Good things about ARM
+- Tried and tested
+- Fairely robust
+- Many example templates from MS
+- Tooling support
+- Can retrieve secrets from key vault when deploying
+
