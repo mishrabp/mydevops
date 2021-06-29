@@ -19,14 +19,14 @@ trigger: none
 #    - mydevops/*.json
 
 schedules:
-  - cron: "55 08 * * *"
-    displayName: Daily 3:55 AM CT
+  - cron: "00 09 * * *"
+    displayName: Daily 4:00 AM CT
     branches:
       include: 
       - main
     always: true
-  - cron: "55 20 * * *"
-    displayName: Daily 03:55 PM CT
+  - cron: "00 21 * * *"
+    displayName: Daily 04:00 PM CT
     branches:
       include: 
       - main
