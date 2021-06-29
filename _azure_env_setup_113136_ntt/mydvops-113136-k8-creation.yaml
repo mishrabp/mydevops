@@ -1,22 +1,36 @@
 # 
 
-trigger:
-  branches:
-    include:
-    - main
-  paths:
-    exclude:
-    - mydevops/_azure_env_setup_bibhu_msn/*
-    - mydevops/drawings/*
-    - mydevops/sample_arm_templates/*
-    - mydevops/sample_azure_ps/*
-    - mydevops/sample_azurecli/*
-    - mydevops/sample_k8_yaml/*
-    - mydevops/sample_terraforms/*
-    - mydevops/.gitignore
-    - mydevops/*.sh
-    - mydevops/*.pem
-    - mydevops/*.json
+trigger: none
+#  branches:
+#    include:
+#    - main
+#  paths:
+#    exclude:
+#    - mydevops/_azure_env_setup_bibhu_msn/*
+#    - mydevops/drawings/*
+#    - mydevops/sample_arm_templates/*
+#    - mydevops/sample_azure_ps/*
+#    - mydevops/sample_azurecli/*
+#    - mydevops/sample_k8_yaml/*
+#    - mydevops/sample_terraforms/*
+#    - mydevops/.gitignore
+#    - mydevops/*.sh
+#    - mydevops/*.pem
+#    - mydevops/*.json
+
+schedules:
+  - cron: "55 08 * * *"
+    displayName: Daily 3:55 AM CT
+    branches:
+      include: 
+      - main
+    always: true
+  - cron: "55 20 * * *"
+    displayName: Daily 03:55 PM CT
+    branches:
+      include: 
+      - main
+    always: true
 
 variables:
 - group: TerraformVariableGroup #its a group of variables defined in the Pipeline Library in Azure DevOps. This line of code copy them over here.
