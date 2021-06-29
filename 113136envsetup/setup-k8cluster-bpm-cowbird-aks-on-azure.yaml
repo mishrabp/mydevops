@@ -42,7 +42,7 @@ jobs:
   displayName: 'Create resources in Azure'
   pool:
     name: "MyBuildAgents"
-    demands: VisualStudio
+    demands: node.js
   steps:
   - task: DownloadPipelineArtifact@2
     displayName: 'Download Artifacts'
