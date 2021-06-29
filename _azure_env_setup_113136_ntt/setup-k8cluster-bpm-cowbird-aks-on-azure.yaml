@@ -74,6 +74,7 @@ jobs:
 
   - task: TerraformTaskV2@2
     displayName: 'Terraform : init'
+    condition: succeededOrFailed()
     inputs:
         provider: 'azurerm'
         command: init
@@ -87,6 +88,7 @@ jobs:
 
   - task: TerraformTaskV2@2
     displayName: 'Terraform : plan'
+    condition: succeededOrFailed()
     inputs:
         provider: 'azurerm'
         command: 'plan'

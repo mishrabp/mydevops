@@ -6,20 +6,20 @@ trigger:
     - main
   paths:
     exclude:
-    - mydevops/arm/*
-    - mydevops/azurecli/*
-    - mydevops/azureps/*
-    - mydevops/bibhumsnenv/*
+    - mydevops/_azure_env_setup_bibhu_msn/*
     - mydevops/drawings/*
-    - mydevops/k8samples/*
-    - mydevops/terraforms/*
+    - mydevops/sample_arm_templates/*
+    - mydevops/sample_azure_ps/*
+    - mydevops/sample_azurecli/*
+    - mydevops/sample_k8_yaml/*
+    - mydevops/sample_terraforms/*
     - mydevops/.gitignore
     - mydevops/*.sh
     - mydevops/*.pem
     - mydevops/*.json
 
 variables:
-- group: TerraformVariableGroup #its a group of variable defined in the Pipeline Library in Azure DevOps
+- group: TerraformVariableGroup #its a group of variables defined in the Pipeline Library in Azure DevOps. This line of code copy them over here.
 - name: subscription
   value: 'Visual Studio Subscription - 113136'
 - name: location
@@ -34,7 +34,7 @@ variables:
 
 stages:
 - stage: Build
-  displayName: 'Build Code'
+  displayName: 'Download Code'
   jobs:
   - job: Build
     pool:
@@ -51,9 +51,9 @@ stages:
       continueOnError: true
 
     - task: CopyFiles@2
-      displayName: 'Copy Terraforms to: $(build.artifactstagingdirectory)/113136envsetup'
+      displayName: 'Copy Terraforms to: $(build.artifactstagingdirectory)/terraform'
       inputs:
-        SourceFolder: 113136envsetup/terraforms/k8clusters/bpm-cowbird-aks
+        SourceFolder: _azure_env_setup_113136_ntt\terraforms\k8cluster-bpm-cowbird-aks
         TargetFolder: '$(build.artifactstagingdirectory)/terraform'
 
     - task: PublishBuildArtifacts@1
