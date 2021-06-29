@@ -28,7 +28,6 @@ resource "azurerm_resource_group" "default" {
 
 data "azurerm_container_registry" "default" {
   name                = "#{acrName}#" #var.acrName
-  location            = azurerm_resource_group.default.location
   resource_group_name = azurerm_resource_group.default.name
 }
 

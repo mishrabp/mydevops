@@ -7,7 +7,7 @@ output "kubernetes_cluster_name" {
 }
 
 output "login_server" {
-  value = data.azurerm_container_registry.example.login_server
+  value = data.azurerm_container_registry.default.login_server
 }
 
 
