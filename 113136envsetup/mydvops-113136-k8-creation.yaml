@@ -18,8 +18,21 @@ trigger:
     - mydevops/*.pem
     - mydevops/*.json
 
-stages:
+variables:
+- group: TerraformVariableGroup #its a group of variable defined in the Pipeline Library in Azure DevOps
+- name: subscription
+  value: 'Visual Studio Subscription - 113136'
+- name: location
+  value: 'westus'
+- name: buildPlatform
+  value: 'Any CPU'
+- name: buildConfiguration
+  value: 'release'
+- name: artifactName
+  value: 'drop'
 
+
+stages:
 - stage: Build
   displayName: 'Build Code'
   jobs:
@@ -51,15 +64,15 @@ stages:
         publishLocation: 'Container'
       condition: succeededOrFailed()
 
-#- stage: Infrastructure
-#  displayName: 'Setup K8 Cluster'
-#  dependsOn: Build
-#  jobs:
-#  - template: setup-k8cluster-on-azure.yaml
-#    parameters:
-#      subscription: $(subscription)
-#      terraformstoragerg: $(terraformstoragerg)
-#      terraformstorageaccount: $(terraformstorageaccount)
-#      terraformcontainer: $(terraformcontainer)
+- stage: Infrastructure
+  displayName: 'Setup K8 Cluster'
+  dependsOn: Build
+  jobs:
+  - template: setup-k8cluster-bpm-cowbird-aks-on-azure.yaml
+    parameters:
+      subscription: $(subscription)
+      terraformstoragerg: $(terraformstoragerg)
+      terraformstorageaccount: $(terraformstorageaccount)
+      terraformcontainer: $(terraformcontainer)
 
 

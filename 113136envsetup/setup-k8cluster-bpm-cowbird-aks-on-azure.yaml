@@ -55,8 +55,8 @@ jobs:
   - task: replacetokens@3
     displayName: 'Replace tokens in terraform'
     inputs:
-        rootDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
-        targetFiles: 'main.tf'
+        rootDirectory: '$(System.DefaultWorkingDirectory)/terraform'
+        targetFiles: 'aks-cluster.tf'
         encoding: 'auto'
         writeBOM: true
         actionOnMissing: 'warn'
@@ -78,7 +78,7 @@ jobs:
         provider: 'azurerm'
         command: init
         commandOptions: '-reconfigure'
-        workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
+        workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
         backendServiceArm: ${{ parameters.subscription }}
         backendAzureRmResourceGroupName: ${{ parameters.terraformstoragerg }}
         backendAzureRmStorageAccountName: ${{ parameters.terraformstorageaccount }}
@@ -90,7 +90,7 @@ jobs:
     inputs:
         provider: 'azurerm'
         command: 'plan'
-        workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
+        workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
         environmentServiceNameAzureRM: ${{ parameters.subscription }}
 
   - task: TerraformTaskV2@2
@@ -98,7 +98,7 @@ jobs:
     inputs:
         provider: 'azurerm'
         command: 'apply'
-        workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
+        workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
         commandOptions: '-auto-approve'
         environmentServiceNameAzureRM: ${{ parameters.subscription }}
     continueOnError: true
