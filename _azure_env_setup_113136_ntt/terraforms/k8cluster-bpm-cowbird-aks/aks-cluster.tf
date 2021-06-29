@@ -16,6 +16,7 @@ provider "azurerm" {
   features {}
 }
 
+
 resource "azurerm_resource_group" "default" {
   name     = "#{resourceGroup}#" #var.resourceGroup
   location = "West US 2"
@@ -23,6 +24,12 @@ resource "azurerm_resource_group" "default" {
   tags = {
     environment = "Demo"
   }
+}
+
+data "azurerm_container_registry" "default" {
+  name                = "#{acrName}#" #var.acrName
+  location            = azurerm_resource_group.default.location
+  resource_group_name = azurerm_resource_group.default.name
 }
 
 resource "azurerm_kubernetes_cluster" "default" {
