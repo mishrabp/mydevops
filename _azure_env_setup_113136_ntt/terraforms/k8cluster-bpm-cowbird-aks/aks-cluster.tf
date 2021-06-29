@@ -31,8 +31,8 @@ resource "azurerm_container_registry" "default" {
   location            = azurerm_resource_group.default.location
   resource_group_name = azurerm_resource_group.default.name
   sku                      = "Standard"
-  admin_enabled            = false
-  georeplication_locations = ["East US", "West Europe"]
+  admin_enabled            = true
+  #georeplication_locations = ["East US", "West Europe"]
 }
 
 resource "azurerm_kubernetes_cluster" "default" {
