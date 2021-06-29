@@ -26,9 +26,13 @@ resource "azurerm_resource_group" "default" {
   }
 }
 
-data "azurerm_container_registry" "default" {
+resource "azurerm_container_registry" "default" {
   name                = "#{acrName}#" #var.acrName
+  location            = azurerm_resource_group.default.location
   resource_group_name = azurerm_resource_group.default.name
+  sku                      = "Standard"
+  admin_enabled            = false
+  georeplication_locations = ["East US", "West Europe"]
 }
 
 resource "azurerm_kubernetes_cluster" "default" {
