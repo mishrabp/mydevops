@@ -37,6 +37,12 @@ stages:
       enabled: false
       continueOnError: true
 
+    - task: CopyFiles@2
+      displayName: 'Copy Terraforms to: $(build.artifactstagingdirectory)/113136envsetup'
+      inputs:
+        SourceFolder: 113136envsetup/terraform
+        TargetFolder: '$(build.artifactstagingdirectory)/terraform'
+
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Artifact'
       inputs:
