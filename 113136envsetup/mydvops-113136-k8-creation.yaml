@@ -1,0 +1,59 @@
+# 
+
+trigger:
+  branches:
+    include:
+    - main
+  paths:
+    exclude:
+    - mydevops/arm/*
+    - mydevops/azurecli/*
+    - mydevops/azureps/*
+    - mydevops/bibhumsnenv/*
+    - mydevops/drawings/*
+    - mydevops/k8samples/*
+    - mydevops/terraforms/*
+    - mydevops/.gitignore
+    - mydevops/*.sh
+    - mydevops/*.pem
+    - mydevops/*.json
+
+stages:
+
+- stage: Build
+  displayName: 'Build Code'
+  jobs:
+  - job: Build
+    pool:
+      name: "MyBuildAgents"
+      demands: node.js 
+
+    steps:
+    - task: PublishSymbols@2
+      displayName: 'Publish symbols path'
+      inputs:
+        SearchPattern: '**\*.*'
+        PublishSymbols: false
+      enabled: false
+      continueOnError: true
+
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Artifact'
+      inputs:
+        PathtoPublish: '$(build.artifactstagingdirectory)'
+        ArtifactName: '$(artifactName)'
+        publishLocation: 'Container'
+      condition: succeededOrFailed()
+
+#- stage: Infrastructure
+#  displayName: 'Setup K8 Cluster'
+#  dependsOn: Build
+#  jobs:
+#  - template: setup-k8cluster-on-azure.yaml
+#    parameters:
+#      subscription: $(subscription)
+#      terraformstoragerg: $(terraformstoragerg)
+#      terraformstorageaccount: $(terraformstorageaccount)
+#      terraformcontainer: $(terraformcontainer)
+
+

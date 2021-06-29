@@ -1,0 +1,11 @@
+#Open AKS dashboard
+az aks browse --resource-group myResourceGroup --name myAKSCluster
+
+http://127.0.0.1:8001
+http://127.0.0.1:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy
+
+
+#Sign in to dashboard
+## Update <RESOURCE_GROUP and <AKS_NAME> with your input.
+
+kubectl config view -o jsonpath='{.users[?(@.name == "clusterUser_<RESOURCE GROUP>_<AKS_NAME>")].user.auth-provider.config.access-token}'

@@ -1,0 +1,5 @@
+appId    = "1ebfab9a-13ec-49ef-be7d-e8e3c886b9d5"
+password = "q8.X~.w4.U66N_Rl1Hywxq0O2H2Md.J.CE"
+resourceGroup = "bpm-cowbird-rg"
+k8ClusterName = "bpm-cowbird-aks"
+k8ClusterDNS = "bpm-cowbird-k8s"
