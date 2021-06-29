@@ -91,7 +91,7 @@ jobs:
     inputs:
       provider: 'azurerm'
       command: 'destroy'
-      workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
+      workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
       commandOptions: '-auto-approve'
       environmentServiceNameAzureRM: '$(subscription)'   
 
