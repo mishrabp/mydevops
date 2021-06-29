@@ -86,12 +86,12 @@ jobs:
         backendAzureRmContainerName: ${{ parameters.terraformcontainer }}
         backendAzureRmKey: 'terraform.tfstate'
 
-    - task: TerraformTaskV2@2
-      displayName: 'Terraform : destroy'
-      inputs:
-        provider: 'azurerm'
-        command: 'destroy'
-        workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
-        commandOptions: '-auto-approve'
-        environmentServiceNameAzureRM: '$(subscription)'   
+  - task: TerraformTaskV2@2
+    displayName: 'Terraform : destroy'
+    inputs:
+      provider: 'azurerm'
+      command: 'destroy'
+      workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
+      commandOptions: '-auto-approve'
+      environmentServiceNameAzureRM: '$(subscription)'   
 
