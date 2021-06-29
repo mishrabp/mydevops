@@ -54,7 +54,6 @@ stages:
     pool:
       name: "MyBuildAgents"
       demands: node.js 
-
     steps:
     - task: PublishSymbols@2
       displayName: 'Publish symbols path'
@@ -67,7 +66,7 @@ stages:
     - task: CopyFiles@2
       displayName: 'Copy Terraforms to: $(build.artifactstagingdirectory)/terraform'
       inputs:
-        SourceFolder: _azure_env_setup_113136_ntt\terraforms\k8cluster-bpm-cowbird-aks
+        SourceFolder: _azure_env_setup_113136_ntt/terraforms/k8cluster-bpm-cowbird-aks
         TargetFolder: '$(build.artifactstagingdirectory)/terraform'
 
     - task: PublishBuildArtifacts@1
