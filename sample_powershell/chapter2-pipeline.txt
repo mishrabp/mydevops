@@ -1,0 +1,49 @@
+Power for PS pipeline
+-----------------------------------------------------------------------------------------
+
+A pipeline operator is used to pass out of one command to another
+
+$Get-Process *notepad* | Stop-Process >> this looks for all running processes matching wildcard *notepad*. It then passes the running processes to Stop-Process which kills them.
+
+$Get-Help Stop-Process >> takes you to the help guide of Stop-Process
+
+Important Note:
+----------
+$PsItem is an automatic variable that contains current object in the pipeline.
+$_ is an alias to $PsItems. You can use any one of them.
+
+$Get-Process | ForEach-Object {$PsItem} >> It loops through each object returned by Get-Process and returns current object {$PsItem} in the loop.
+
+$1,2,3 | ForEach-Object {$PsItem} >> It prints each number object 
+
+$1,2,3 | ForEach-Object {$_} >> It prints each number object 
+
+$Get-Process *notepad* | Format-List >> returns only a subset of property in the process object
+
+$Get-Process *notepad* | Format-List * >> returns the complete list of properties
+
+$Get-Process *notepad* | Select-Object Name, Id, CPU >> returns only selected number of properties.
+
+$Get-Process | Sort-Object CPU >> returns list of processes sorted by the CPU usage
+
+$Get-Process | Where-Object {$_.CPU -gt 50} >> returns the list of process consuming 50+ CPU
+
+$Get-ChildItem -Path $HOME -Recurse | Where-Object {$_.Length -gt 20MB} >> Returns all files in the home sub-directories having size more than 20MB
+
+$Get-ChildItem -Path $HOME -Recurse | Where-Object {$_.Length -gt 20MB} | Measure-Object >> Returns the number of files of size more than 20MB.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

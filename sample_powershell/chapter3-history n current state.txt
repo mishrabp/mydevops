@@ -1,0 +1,16 @@
+Evolution of PS
+-----------------------------------------------------------------------------------------
+- PowerShell was created by Jeffrey Snover. Its now managed by Steve Lee in Microsoft. 
+- Codebase of PS is available on GitHub. Originally, PS was available in Windows only.
+- Version 6 on, PS became cross-platform command. It became available on Linux, MaC.
+- Between v5 and v6, there is not much difference other than v6 is cross-platform and has some performance improvement.
+- Note, not all commands of PS is available on all OS systems. Windows supports the most. Linux supports a subset.
+- v5 & v6 runs side-by-side in windows.
+
+
+$ $PSVersionTable >> it tells you PS version
+
+**Latest version is 7. It has lot more windows and linux capabilities.
+
+
+

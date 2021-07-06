@@ -1,0 +1,55 @@
+Getting started with PS
+-----------------------------------------------------------------------------------------
+$Get-Command >> this gets you all commands available in PS
+
+PS commands always start with VERB
+e.g. <Get>-Timezone
+<Add>-Printer
+<Clear>-Disk
+<Disable>-NetAdapter
+<Enable>-NetAdapter
+<Find>-Module
+<Import>-Module
+<New>-Guid
+<Register>-DnsClient
+<Remove>-FileShare
+<Restart>-NetAdapter
+<Set>-Disk
+<Save>-
+<Start>-
+<Stop>-
+
+$Get-Help <any command> >> it provides help on the command
+e.g. Get-Help Get-Timezone
+Get-Help Get-Timezone -Online >> It gets you the online help
+Get-Help Get-ItemProperty -Examples >> It gets you help with examples
+
+Types of commands:
+- Alias
+- Function
+- Cmdlet
+
+$Get-Date | Get-Member >> Get-Date retuns a Date Object. Get-Member shows the name of Methods & Properties in Date Object.
+
+$Get-Date | Format-List >> Shows all properties value of the Date Object in a list format.
+
+$Get-Date | Format-Table >> Shows all properties value of the Date Object in a table format.
+
+$Get-Random >> Returns a Random number Object
+
+$Get-Random | Get-Member
+
+---------------------------------------------------------------------
+
+$Find-Module -Tag Telegram >> It locates the module which has command mathing text "Telegram"
+
+$Install-Module PoshGram >> Installs the module from PowerShell gallary
+
+$Get-TimeZone >> returns the current time TimeZone
+
+$Get-TimeZone -ListAvailable >> returns the list of timezones available
+
+
+
+
+

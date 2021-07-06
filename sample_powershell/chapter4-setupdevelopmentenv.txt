@@ -1,0 +1,10 @@
+Setup Development Environment for PS
+-----------------------------------------------------------------------------------------
+- PowerShell ISE >> is the windows IDE for PowerShell development. 
+- Recently, MS declared that they would not support it anymore.
+- Visual Code is the new PS IDE. You must install the PowerShell extension on it.
+
+
+
+
+

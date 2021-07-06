@@ -1,0 +1,46 @@
+Working with PS variables
+-----------------------------------------------------------------------------------------
+variable always starts with $ sign. 
+
+$process = Get-Process >> this defines a variable $process and assigns the collection of objects returned by Get-Process
+$process | Where-Object {$_.CPU -gt 5000}
+$process | Sort-Object WorkingSet64 -Descending
+
+**PowerShell is not strongly typed
+
+$psvar = "text" >> if you load a string, it becomes a string type variable
+$psvar = 4 >> if you load a number, it becomes a number type
+
+**Type conversion
+[int]$num1 = '2' >> converts the string to integer and assigns to $num1
+[int]$num2 = '2'
+$total = $num1 + $num2
+
+$var1 = $total.ToString() >> converts integer to string 
+
+**Single Quote vs Double Quote
+$literal = 'Two plus one equals: $(1 + 2)' >> the entire string is treated as literal 
+$literal
+
+$escaped = "Two plus one equals: $(1 + 2)" >> here the liternal within $() is evaluated. 
+$escaped
+
+**Reservered variables
+Get-Variable >> returns the list of reserved variables
+
+**Reserver environment variables
+Get-ChildItem env:
+
+**Invoking environment variable
+$env:COMPUTERNAME
+
+
+
+
+
+
+
+
+
+
+
