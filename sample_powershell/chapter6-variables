@@ -28,7 +28,7 @@ $escaped
 **Reservered variables
 Get-Variable >> returns the list of reserved variables
 
-**Reserver environment variables
+**Reserved environment variables
 Get-ChildItem env:
 
 **Invoking environment variable
