@@ -1,0 +1,216 @@
+﻿Level,Date and Time,Source,Event ID,Task Category
+Information,7/14/2021 6:16:46 AM,Outlook,63,None,The Exchange web service request GetAppManifests succeeded. 
+Information,7/14/2021 6:16:44 AM,Outlook,63,None,Outlook detected a change notification for your apps and will attempt to update them.
+Information,7/14/2021 6:13:38 AM,Microsoft-Windows-Security-SPP,16384,None,Successfully scheduled Software Protection service for re-start at 2021-07-19T03:18:38Z. Reason: RulesEngine.
+Information,7/14/2021 6:13:07 AM,Microsoft-Windows-Security-SPP,16394,None,Offline downlevel migration succeeded.
+Information,7/14/2021 6:03:41 AM,Microsoft-Windows-Security-SPP,16384,None,Successfully scheduled Software Protection service for re-start at 2021-07-19T03:18:41Z. Reason: RulesEngine.
+Information,7/14/2021 6:03:11 AM,Microsoft-Windows-Security-SPP,16394,None,Offline downlevel migration succeeded.
+Information,7/14/2021 6:02:48 AM,Microsoft-Windows-Security-SPP,16384,None,Successfully scheduled Software Protection service for re-start at 2021-07-19T03:18:48Z. Reason: RulesEngine.
+Information,7/14/2021 6:01:55 AM,Microsoft-Windows-Security-SPP,16394,None,Offline downlevel migration succeeded.
+Information,7/14/2021 6:01:11 AM,Microsoft-Windows-Security-SPP,16384,None,Successfully scheduled Software Protection service for re-start at 2021-07-19T03:18:10Z. Reason: RulesEngine.
+Information,7/14/2021 6:00:39 AM,Microsoft-Windows-Security-SPP,1040,None,"Hardware has changed from previous boot.
+ AppId=55c92734-d682-4d71-983e-d6ec3f16059f, SkuId=73111121-5638-40f6-bc11-f1d7b0d64300."
+Information,7/14/2021 6:00:38 AM,Microsoft-Windows-Security-SPP,16394,None,Offline downlevel migration succeeded.
+Information,7/14/2021 6:00:21 AM,Outlook,63,None,The Exchange web service request GetAppManifests succeeded. 
+Information,7/14/2021 6:00:20 AM,Outlook,63,None,Outlook detected a change notification for your apps and will attempt to update them.
+Information,7/14/2021 6:00:11 AM,Outlook,26,None,Connection to Microsoft Exchange has been restored.
+Information,7/14/2021 6:00:02 AM,Microsoft-Windows-Security-SPP,16384,None,Successfully scheduled Software Protection service for re-start at 2021-07-19T03:19:02Z. Reason: RulesEngine.
+Information,7/14/2021 5:59:48 AM,edgeupdate,0,None,Service stopped.
+Information,7/14/2021 5:59:42 AM,gupdate,0,None,The operation completed successfully.
+Information,7/14/2021 5:59:31 AM,Microsoft-Windows-Security-SPP,1040,None,"Hardware has changed from previous boot.
+ AppId=55c92734-d682-4d71-983e-d6ec3f16059f, SkuId=73111121-5638-40f6-bc11-f1d7b0d64300."
+Information,7/14/2021 5:59:30 AM,Microsoft-Windows-Security-SPP,16394,None,Offline downlevel migration succeeded.
+Information,7/14/2021 5:59:19 AM,Outlook,63,None,The Exchange web service request GetAppManifests succeeded. 
+Information,7/14/2021 5:58:59 AM,DockerService,0,None,PowerEvent handled successfully by the service.
+Information,7/14/2021 5:58:59 AM,DockerService,0,None,PowerEvent handled successfully by the service.
+Information,7/14/2021 5:58:50 AM,DockerService,0,None,PowerEvent handled successfully by the service.
+Information,7/14/2021 5:58:44 AM,DockerService,0,None,PowerEvent handled successfully by the service.
+Information,7/14/2021 5:58:44 AM,Outlook,26,None,Connection to Microsoft Exchange has been lost. Outlook will restore the connection when possible.
+Information,7/14/2021 12:31:44 AM,DockerService,0,None,PowerEvent handled successfully by the service.
+Information,7/14/2021 12:31:39 AM,MSSQLSERVER,17890,Server,"A significant part of sql server process memory has been paged out. This may result in a performance degradation. Duration: 57634 seconds. Working set (KB): 114676, committed (KB): 282364, memory utilization: 40%%."
+Information,7/14/2021 12:03:54 AM,MSSQLSERVER,17177,Server,This instance of SQL Server has been using a process ID of 5532 since 7/13/2021 8:14:24 AM (local) 7/13/2021 1:14:24 PM (UTC). This is an informational message only; no user action is required.
+Information,7/13/2021 11:48:54 PM,acdartcli,1,(1),"The description for Event ID 1 from source acdartcli cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer.
+
+If the event originated on another computer, the display information had to be saved with the event.
+
+The following information was included with the event: 
+
+Function: MsgCatalog::init
+File: c:\temp\build\thehoff\orion_mr10.989354729559\orion_mr1\vpn\common\i18n\msgcatalog.cpp
+Line: 373
+initialized catalog: AnyConnect with locale: en-US
+
+The locale specific resource for the desired message is not present
+"
+Error,7/13/2021 11:48:54 PM,acdartcli,2,(1),"The description for Event ID 2 from source acdartcli cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer.
+
+If the event originated on another computer, the display information had to be saved with the event.
+
+The following information was included with the event: 
+
+Function: MsgCatalog::getLocalizationPath
+File: c:\temp\build\thehoff\orion_mr10.989354729559\orion_mr1\vpn\common\i18n\msgcatalog.cpp
+Line: 902
+Invoked Function: CInstanceSmartPtr<StoragePath>
+Return Code: -23199734 (0xFE9E000A)
+Description: CSTORAGEPATH_ERROR_NO_INSTANCE
+
+
+The locale specific resource for the desired message is not present
+"
+Information,7/13/2021 11:36:25 PM,Windows Error Reporting,1001,None,"Fault bucket 1623698256206090945, type 5
+Event Name: BEX
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: ZSATunnel.exe
+P2: 3.1.0.129
+P3: 6019398d
+P4: ZSATunnel.exe
+P5: 3.1.0.129
+P6: 6019398d
+P7: 00484379
+P8: c0000409
+P9: 00000007
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8A74.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8BFB.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8C2B.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8C39.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8CA7.tmp.txt
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_ZSATunnel.exe_d801ffb4f06e8c3a3416a48b36a73ac80d9b4_17c7122e_df2e1813-b84b-45da-a22c-febb89b413f9
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9b8adee9-4452-4937-9f4a-4f744a614528
+Report Status: 268435456
+Hashed bucket: 8ff15eafa3879b10268888f61795d2c1
+Cab Guid: 0"
+Error,7/13/2021 11:36:23 PM,Application Error,1000,(100),"Faulting application name: ZSATunnel.exe, version: 3.1.0.129, time stamp: 0x6019398d
+Faulting module name: ZSATunnel.exe, version: 3.1.0.129, time stamp: 0x6019398d
+Exception code: 0xc0000409
+Fault offset: 0x00484379
+Faulting process id: 0x3924
+Faulting application start time: 0x01d7784c7d83afc4
+Faulting application path: C:\Program Files (x86)\Zscaler\ZSATunnel\ZSATunnel.exe
+Faulting module path: C:\Program Files (x86)\Zscaler\ZSATunnel\ZSATunnel.exe
+Report Id: 9b8adee9-4452-4937-9f4a-4f744a614528
+Faulting package full name: 
+Faulting package-relative application ID: "
+Information,7/13/2021 11:36:20 PM,acdartcli,1,(1),"The description for Event ID 1 from source acdartcli cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer.
+
+If the event originated on another computer, the display information had to be saved with the event.
+
+The following information was included with the event: 
+
+Function: MsgCatalog::init
+File: c:\temp\build\thehoff\orion_mr10.989354729559\orion_mr1\vpn\common\i18n\msgcatalog.cpp
+Line: 373
+initialized catalog: AnyConnect with locale: en-US
+
+The locale specific resource for the desired message is not present
+"
+Error,7/13/2021 11:36:20 PM,acdartcli,2,(1),"The description for Event ID 2 from source acdartcli cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer.
+
+If the event originated on another computer, the display information had to be saved with the event.
+
+The following information was included with the event: 
+
+Function: MsgCatalog::getLocalizationPath
+File: c:\temp\build\thehoff\orion_mr10.989354729559\orion_mr1\vpn\common\i18n\msgcatalog.cpp
+Line: 902
+Invoked Function: CInstanceSmartPtr<StoragePath>
+Return Code: -23199734 (0xFE9E000A)
+Description: CSTORAGEPATH_ERROR_NO_INSTANCE
+
+
+The locale specific resource for the desired message is not present
+"
+Information,7/13/2021 11:12:32 PM,DockerService,0,None,PowerEvent handled successfully by the service.
+Information,7/13/2021 11:09:25 PM,Microsoft-Windows-Security-SPP,16384,None,Successfully scheduled Software Protection service for re-start at 2021-07-19T03:18:25Z. Reason: RulesEngine.
+Information,7/13/2021 11:08:54 PM,Microsoft-Windows-Security-SPP,16394,None,Offline downlevel migration succeeded.
+Information,7/13/2021 11:05:29 PM,Microsoft-Windows-RestartManager,10001,None,Ending session 1 started ‎2021‎-‎07‎-‎14T04:04:14.381067300Z.
+Information,7/13/2021 11:04:14 PM,Microsoft-Windows-RestartManager,10000,None,Starting session 1 - ‎2021‎-‎07‎-‎14T04:04:14.381067300Z.
+Information,7/13/2021 11:02:54 PM,Microsoft-Windows-Winlogon,4004,None,The Windows logon process has failed to terminate the currently logged on user's processes.
+Information,7/13/2021 11:01:50 PM,Desktop Window Manager,9027,None,The Desktop Window Manager has registered the session port.
+Information,7/13/2021 10:39:06 PM,Microsoft-Windows-Security-SPP,16384,None,Successfully scheduled Software Protection service for re-start at 2021-07-19T03:19:06Z. Reason: RulesEngine.
+Information,7/13/2021 10:38:36 PM,Microsoft-Windows-Security-SPP,16394,None,Offline downlevel migration succeeded.
+Information,7/13/2021 10:29:16 PM,MsiInstaller,1042,None,Ending a Windows Installer transaction: {AC76BA86-7AD7-1033-7B44-AC0F074E4100}. Client Process Id: 19120.
+Information,7/13/2021 10:29:16 PM,MsiInstaller,1035,None,Windows Installer reconfigured the product. Product Name: Adobe Acrobat Reader DC. Product Version: 21.005.20058. Product Language: 1033. Manufacturer: Adobe Systems Incorporated. Reconfiguration success or error status: 0.
+Information,7/13/2021 10:29:16 PM,MsiInstaller,11728,None,Product: Adobe Acrobat Reader DC -- Configuration completed successfully.
+Information,7/13/2021 10:29:16 PM,MsiInstaller,1036,None,Windows Installer installed an update. Product Name: Adobe Acrobat Reader DC. Product Version: 21.005.20058. Product Language: 1033. Manufacturer: Adobe Systems Incorporated. Update Name: Adobe Acrobat Reader DC
+ (21.005.20058). Installation success or error status: 0.
+Information,7/13/2021 10:29:16 PM,MsiInstaller,1022,None,Product: Adobe Acrobat Reader DC - Update 'Adobe Acrobat Reader DC
+ (21.005.20058)' installed successfully.
+Information,7/13/2021 10:29:12 PM,Microsoft-Windows-Search,1003,Search service,The Windows Search Service started.
+
+Information,7/13/2021 10:29:10 PM,ESENT,326,General,"SearchIndexer (22460,D,50) Windows: The database engine attached a database (1, C:\ProgramData\Microsoft\Search\Data\Applications\Windows\Windows.edb). (Time=0 seconds) 
+ 
+Saved Cache: 0 0 
+Additional Data: lgposAttach = 00016BC0:006C:0268,
+dbv = 1568.110.240 
+ 
+Internal Timing Sequence: 
+[1] 0.000005 +J(0) +M(C:0K, Fs:1, WS:4K # 0K, PF:0K # 0K, P:0K)
+[2] 0.000339 +J(0) +M(C:0K, Fs:25, WS:36K # 0K, PF:32K # 0K, P:32K)
+[3] 0.023241 -0.013553 (25) WT +J(CM:0, PgRf:0, Rd:0/0, Dy:0/0, Lg:3480/2) +M(C:0K, Fs:149, WS:548K # 0K, PF:564K # 0K, P:564K)
+[4] 0.000324 +J(0) +M(C:0K, Fs:1, WS:4K # 0K, PF:0K # 0K, P:0K)
+[5] -
+[6] -
+[7] -
+[8] 0.082727 -0.005154 (3) CM +J(CM:3, PgRf:3, Rd:14/3, Dy:0/0, Lg:54/1) +M(C:0K, Fs:53, WS:208K # 120K, PF:716K # 348K, P:716K)
+[9] 0.010117 -0.000602 (5) CM -0.009087 (1) WT +J(CM:5, PgRf:23, Rd:0/5, Dy:0/0, Lg:0/0) +M(C:0K, Fs:68, WS:272K # 272K, PF:288K # 288K, P:288K)
+[10] 0.000625 -0.000460 (1) CM +J(CM:1, PgRf:40, Rd:0/1, Dy:0/0, Lg:0/0) +M(C:0K, Fs:10, WS:40K # 40K, PF:96K # 96K, P:96K)
+[11] 0.000023 +J(CM:0, PgRf:1, Rd:0/0, Dy:0/0, Lg:0/0) +M(C:0K, Fs:2, WS:8K # 8K, PF:0K # 0K, P:0K)
+[12] 0.000061 +J(CM:0, PgRf:42, Rd:0/0, Dy:0/0, Lg:0/0) +M(C:0K, Fs:3, WS:12K # 12K, PF:0K # 0K, P:0K)
+[13] 0.000001 +J(0)
+[14] 0.0 +J(0)
+[15] 0.000007 +J(CM:0, PgRf:1, Rd:0/0, Dy:0/0, Lg:0/0)."
+Information,7/13/2021 10:29:10 PM,ESENT,105,General,"SearchIndexer (22460,D,0) Windows: The database engine started a new instance (0). (Time=0 seconds) 
+ 
+Additional Data:
+  
+ 
+Internal Timing Sequence: 
+[1] 0.001806 +J(0) +M(C:0K, Fs:209, WS:820K # 820K, PF:4568K # 4568K, P:4568K)
+[2] 0.000337 +J(0) +M(C:0K, Fs:165, WS:656K # 656K, PF:932K # 932K, P:932K)
+[3] 0.000061 +J(0) +M(C:0K, Fs:11, WS:40K # 40K, PF:68K # 68K, P:68K)
+[4] 0.000159 +J(0) +M(C:0K, Fs:25, WS:100K # 100K, PF:360K # 360K, P:360K)
+[5] 0.001614 +J(0) +M(C:0K, Fs:10, WS:40K # 40K, PF:20K # 20K, P:20K)
+[6] 0.023151 +J(0) +M(C:0K, Fs:25, WS:100K # 100K, PF:24K # 24K, P:24K)
+[7] 0.025189 -0.002618 (1) WT +J(0) +M(C:0K, Fs:275, WS:1096K # 1096K, PF:1032K # 1032K, P:1032K)
+[8] -
+[9] -
+[10] -
+[11] -
+[12] -
+[13] 0.063215 +J(CM:0, PgRf:0, Rd:0/0, Dy:0/0, Lg:616/1) +M(C:0K, Fs:9, WS:-996K # 24K, PF:-1024K # 12K, P:-1024K)
+[14] 0.000019 +J(0)
+[15] 0.000084 +J(0) +M(C:0K, Fs:66, WS:260K # 0K, PF:68K # 0K, P:68K)
+[16] 0.000333 +J(0) +M(C:0K, Fs:3, WS:4K # 0K, PF:0K # 0K, P:0K)."
+Information,7/13/2021 10:29:10 PM,ESENT,102,General,"SearchIndexer (22460,P,98) Windows: The database engine (10.00.19041.0000) is starting a new instance (0)."
+Information,7/13/2021 10:28:49 PM,ESENT,103,General,"SearchIndexer (13036,T,97) Windows: The database engine stopped the instance (0). 
+ 
+Dirty Shutdown: 0 
+ 
+Internal Timing Sequence: 
+[1] 0.000006 +J(0) +M(C:0K, Fs:1, WS:4K # 0K, PF:0K # 0K, P:0K)
+[2] 0.000044 +J(0) +M(C:0K, Fs:1, WS:4K # 0K, PF:0K # 0K, P:0K)
+[3] 0.000134 +J(CM:0, PgRf:6, Rd:0/0, Dy:0/4, Lg:104/4)
+[4] 0.000008 +J(0)
+[5] 0.019650 -0.000007 (86) CM -0.012618 (8) WT +J(CM:86, PgRf:0, Rd:0/86, Dy:0/0, Lg:0/0) +M(C:0K, Fs:571, WS:180K # 0K, PF:4K # 0K, P:4K)
+[6] 0.002550 +J(0) +M(C:0K, Fs:1, WS:-10044K # 0K, PF:-10024K # 0K, P:-10024K)
+[7] 0.000012 +J(0)
+[8] 0.005638 -0.002393 (12) WT +J(CM:0, PgRf:0, Rd:0/0, Dy:0/0, Lg:3131/2) +M(C:0K, Fs:26, WS:-420K # 0K, PF:1320K # 0K, P:1320K)
+[9] 0.000277 -0.000231 (1) WT +J(CM:0, PgRf:0, Rd:0/0, Dy:0/0, Lg:66/1) +M(C:0K, Fs:2, WS:8K # 0K, PF:0K # 0K, P:0K)
+[10] 0.000003 +J(0)
+[11] 0.001022 -0.000199 (2) WT +J(0)
+[12] 0.000053 +J(0) +M(C:0K, Fs:1, WS:0K # 0K, PF:-4K # 0K, P:-4K)
+[13] 0.000474 +J(0) +M(C:0K, Fs:0, WS:0K # 0K, PF:12K # 0K, P:12K)
+[14] 0.000076 +J(0) +M(C:0K, Fs:0, WS:-384K # 0K, PF:-396K # 0K, P:-396K)
+[15] 0.000003 +J(0)."

@@ -3,12 +3,13 @@ Getting started with PS
 $Get-Command >> this gets you all commands available in PS
 
 PS commands always start with VERB
-e.g. <Get>-Timezone
+e.g. 
 <Add>-Printer
 <Clear>-Disk
 <Disable>-NetAdapter
 <Enable>-NetAdapter
 <Find>-Module
+<Get>-Timezone
 <Import>-Module
 <New>-Guid
 <Register>-DnsClient
@@ -18,6 +19,13 @@ e.g. <Get>-Timezone
 <Save>-
 <Start>-
 <Stop>-
+
+Find-Module -Tag Azure #Returns the modules from PSGallery with matching tag
+
+Get-Module Az* -ListAvailable #Returns you matching modules already installed
+
+Get-Command -Noun Az* >> List the commands with matching name
+
 
 $Get-Help <any command> >> it provides help on the command
 e.g. Get-Help Get-Timezone

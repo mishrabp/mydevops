@@ -1,0 +1,6 @@
+#Reference sites for samples
+-----------------------------------------------------------------------------------------------------
+https://laurakokkarinen.com/my-most-used-powershell-scripts-for-managing-sharepoint-online/
+
+https://www.youtube.com/watch?v=qvi8OUflmis&list=PLu1AjnsrTx3VanlINuuRrLpe5IxOnXWaj
+
