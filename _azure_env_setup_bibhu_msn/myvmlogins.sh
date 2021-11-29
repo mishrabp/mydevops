@@ -28,6 +28,7 @@ touch ~/.ssh/config #create a config file
 Host *cloudapp.azure.com
   IdentityFile ~/.ssh/mylinuxvms.pem
   User azureuser
+  Password: AyushiAdriti@year
 
 ssh devopsmasterlinuxvm.centralus.cloudapp.azure.com
 
