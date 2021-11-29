@@ -1,0 +1,9 @@
+{
+    "window.zoomLevel": 1.25,
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 18,
+    "deployToAzure.UseAzurePipelinesForGithub": true,
+    "deployToAzure.UseGithubForCreatingNewRepository": false,
+    "editor.accessibilityPageSize": 20,
+    "workbench.colorTheme": "Monokai Dimmed"
+}
