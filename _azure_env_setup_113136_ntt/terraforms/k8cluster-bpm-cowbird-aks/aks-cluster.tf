@@ -26,14 +26,14 @@ resource "azurerm_resource_group" "default" {
   }
 }
 
-resource "azurerm_container_registry" "default" {
-  name                = "#{acrName}#" #var.acrName
-  location            = azurerm_resource_group.default.location
-  resource_group_name = azurerm_resource_group.default.name
-  sku                      = "Standard"
-  admin_enabled            = true
-  #georeplication_locations = ["East US", "West Europe"]
-}
+#resource "azurerm_container_registry" "default" {
+#  name                = "#{acrName}#" #var.acrName
+#  location            = azurerm_resource_group.default.location
+#  resource_group_name = azurerm_resource_group.default.name
+#  sku                      = "Standard"
+#  admin_enabled            = true
+#  #georeplication_locations = ["East US", "West Europe"]
+#}
 
 resource "azurerm_kubernetes_cluster" "default" {
   name                = "#{k8ClusterName}#" #var.k8ClusterName
