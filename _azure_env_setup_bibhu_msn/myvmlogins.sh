@@ -39,7 +39,7 @@ ssh devopsnode2linuxvm.centralus.cloudapp.azure.com
 ssh devopsk8masterlinuxvm.centralus.cloudapp.azure.com
 
 
-AyushiAdriti@2021
+
 
 devopsk8masterlinuxvm
 
