@@ -4,7 +4,7 @@ ssh -i mylinuxvms.pem azureuser@devopsnode1linuxvm.centralus.cloudapp.azure.com
 
 ssh -i mylinuxvms.pem azureuser@devopsnode2linuxvm.centralus.cloudapp.azure.com
 
-ssh -i mylinuxvms.pem azureuser@devopsk8masterlinuxvm.centralus.cloudapp.azure.com
+ssh -i mylinuxvms.pem azureuser@devopsk8masternodelinuxvm.centralus.cloudapp.azure.com
 
 //Copying files to linux VM
 scp  -i mylinuxvms.pem vsts-agent-linux-x64-2.184.2.tar.gz azureuser@devopsnode2linuxvm.centralus.cloudapp.azure.com:~/myagent/
@@ -37,3 +37,11 @@ ssh devopsnode1linuxvm.centralus.cloudapp.azure.com
 ssh devopsnode2linuxvm.centralus.cloudapp.azure.com
 
 ssh devopsk8masterlinuxvm.centralus.cloudapp.azure.com
+
+
+AyushiAdriti@2021
+
+devopsk8masterlinuxvm
+
+Standard_B1ms
+

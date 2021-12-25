@@ -6,9 +6,9 @@ output "kubernetes_cluster_name" {
   value = azurerm_kubernetes_cluster.default.name
 }
 
-output "login_server" {
-  value = azurerm_container_registry.default.login_server
-}
+#output "login_server" {
+#  value = azurerm_container_registry.default.login_server
+#}
 
 
 # output "host" {
