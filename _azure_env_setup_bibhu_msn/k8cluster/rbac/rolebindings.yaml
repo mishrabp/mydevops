@@ -1,0 +1,43 @@
+#Defining a customer role called pod-reader
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: reader
+  namespace: ns2022
+rules:
+- apiGroups: [""]
+  resources: ["*"]
+  verbs: ["get", "watch", "list"]
+
+---
+#Defining a customer rolebinding called pod-reader
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: read-access
+  namespace: ns2022
+subjects:
+- kind: User
+  name: bibhuadmin
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: reader
+  apiGroup: rbac.authorization.k8s.io
+
+---
+#Binding the built-in cluster role (cluster-admin) to the user
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: cluster-admin-access
+  namespace: ns2022
+subjects:
+- kind: User
+  name: bibhuadmin
+  namespace: ns2022
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin
+  apiGroup: rbac.authorization.k8s.io

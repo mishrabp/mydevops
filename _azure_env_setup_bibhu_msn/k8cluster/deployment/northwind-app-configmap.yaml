@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: northwind-app-configmap
+  namespace: ns2022
+data:
+  MYNWAPP_ENV: development
+  MYNWAPP_PORT: "8080"
+  MYNWAPP_ERRORLOG: "true"
+  MYNWAPP_TRACKINGLOG: "true"

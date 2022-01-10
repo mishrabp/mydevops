@@ -1,0 +1,58 @@
+apiVersion: apps/v1           #api endpoint on the API server
+kind: Deployment              #Entity kind (Pod, Replicaset, Deployment, Services, etc...)
+metadata:
+  name: webserver             #name of the deployment
+  labels:
+    app: nginx-deployment     #A unique label to identify the deployment
+spec:                         #deployment specification
+  replicas: 3                 #ReplicaSet controller creates 3 PODs using template
+  selector:
+    matchLabels:              #selector links the ReplicaSet with template/pod using label
+      app: nginxpod            
+  template:                   
+    metadata:
+      labels:
+        app: nginxpod         #A unique label to identify the pod
+    spec:                     #template specification
+      containers:
+      - name: nginx
+        image: nginx:alpine
+        ports:
+        - containerPort: 80   #port at which container is going to listen
+        livenessProbe:
+          httpGet:            #liveness probe checks health of the pod at /healthz
+            path: /healthz
+            port: 8080
+            httpHeaders:
+            - name: X-Custom-Header
+              value: Awesome 
+          initialDelaySeconds: 5   #first liveness probe starts after 5 sec
+          failureThreshold: 3      #restart the pod after 3 failures
+          periodSeconds: 5         #interval between each probe
+        readinessProbe:
+          httpGet:            
+            path: /healthz
+            port: 8080
+            httpHeaders:
+            - name: X-Custom-Header
+              value: Awesome 
+          initialDelaySeconds: 3   #first readiness probe starts after 3 sec
+          periodSeconds: 5         #interval between each probe
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-service
+  labels:
+    run: web-service
+spec:
+  type: NodePort
+  selector:
+    app: nginxpod             #selector links the service with the pods with label "nginxpod"
+  ports:
+  - port: 8080
+    targetPort: 80 #Its the port at which the container is listening
+    protocol: TCP
+    nodePort: 30007
+

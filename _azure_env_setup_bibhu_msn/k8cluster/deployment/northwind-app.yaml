@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: northwind-app
+  namespace: ns2022
+  labels:
+    app: northwind-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: northwind-app-pod
+  template:
+    metadata:
+      labels:
+        app: northwind-app-pod
+    spec:
+      containers:
+      - name: northwind-app-pod
+        image: bibhupmishra/node-northwind-app
+        envFrom:
+        - configMapRef:
+            name: northwind-app-configmap
+        - secretRef:
+            name: northwind-app-secret
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: northwind-app-svc
+  namespace: ns2022
+spec:
+  type: NodePort
+  selector:
+    app: northwind-app-pod
+  ports:
+  - port: 8080
+    targetPort: 8080
+    nodePort: 30080
+
+
+

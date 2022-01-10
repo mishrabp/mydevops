@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: northwind-app
+  namespace: ns2022
+  labels:
+    app: northwind-app
+spec:
+  containers:
+  - name: northwind-app-pod
+    image: bibhupmishra/node-northwind-app
+    securityContext:
+      runAsUser: 1000
+      capabilities: 
+        add: ["MAC_ADMIN", "KILL"]  
+    envFrom:
+    - configMapRef:
+        name: northwind-app-configmap
+    - secretRef:
+        name: northwind-app-secret
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+    - containerPort: 8080
+
