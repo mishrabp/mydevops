@@ -5,6 +5,10 @@ metadata:
   namespace: ns2022
   labels:
     app: northwind-app
+  annotations:
+    description: "It's a MVC demo built on NodeJs"
+    developer: "Bibhu Prasad Mishra"  
+    email: "bibhup_mishra@yahoo.com"  
 spec:
   replicas: 2
   selector:
@@ -24,18 +28,54 @@ spec:
         - secretRef:
             name: northwind-app-secret
         resources:
+          requests:
+            memory: "64Mi"
+            cpu: "50m"
           limits:
             memory: "128Mi"
             cpu: "500m"
         ports:
         - containerPort: 8080
-
+        readinessProbe:
+          httpGet:
+            path: /logout
+            port: 8080
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          failureThreshold: 5
+        livenessProbe:
+          httpGet:
+            path: /logout
+            port: 8080
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          failureThreshold: 5
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions: 
+              - key: "nodejs"
+                operator: "In"
+                values: 
+                - "yes"
+              - key: "dotnetcore"
+                operator: "In"
+                values: 
+                - "yes"
+      tolerations:
+      - key: "app"
+        operator: "Equal"
+        value: "blue"
+        effect: "NoExecute"
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: northwind-app-svc
   namespace: ns2022
+  labels:
+    svc: northwind-app-svc
 spec:
   type: NodePort
   selector:

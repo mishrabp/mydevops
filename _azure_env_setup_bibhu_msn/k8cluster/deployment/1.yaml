@@ -9,15 +9,15 @@ spec:
   containers:
   - name: northwind-app-pod
     image: bibhupmishra/node-northwind-app
-    securityContext:
-      runAsUser: 1000
-      capabilities: 
-        add: ["MAC_ADMIN", "KILL"]  
-    envFrom:
-    - configMapRef:
-        name: northwind-app-configmap
-    - secretRef:
-        name: northwind-app-secret
+    readinessProbe:
+      httpGet:
+        path: /logout
+        port: 8080
+      initialDelaySeconds: 10
+      periodSeconds: 5
+      failureThreshold: 5
+
+
     resources:
       limits:
         memory: "128Mi"
