@@ -14,10 +14,12 @@ spec:
   selector:
     matchLabels:
       app: northwind-app-pod
+      type: front-end
   template:
     metadata:
       labels:
         app: northwind-app-pod
+        type: front-end
     spec:
       containers:
       - name: northwind-app-pod
@@ -83,7 +85,7 @@ spec:
   ports:
   - port: 8080
     targetPort: 8080
-    nodePort: 30080
+    nodePort: 30090
 
 
 

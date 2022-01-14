@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: testing-job
+  namespace: ns2022
+  labels:
+    app: testing-job
+spec:
+  #completions like replicaset. It creates 6 job pods.
+  completions: 6
+  #by default the 6 Jobs starts in sequence. parallelism makes them trigger at same time.
+  parallelism: 6  
+  template: 
+    spec:
+      containers:
+      - name: testing-app-pod
+        image: kodekloud/random-error
+        #command: ['expr', '3', '+', '5']
+      restartPolicy: Never
+

@@ -1,0 +1,21 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: testing-cronjob
+  namespace: ns2022
+  labels:
+    app: testing-cronjob
+spec:
+  schedule: "0 * * * *" #runs on every one hour
+  jobTemplate: 
+    spec:
+      completions: 2
+      parallelism: 2  
+      template: 
+        spec:
+          containers:
+          - name: testing-app-pod
+            image: kodekloud/random-error
+            #command: ['expr', '3', '+', '5']
+          restartPolicy: Never
+
