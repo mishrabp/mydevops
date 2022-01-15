@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: nginx-configmap
-  namespace: ns2022
-#data:
-#  err-log-path: ''
-#  keep-alive: yes
-#  ssl-protocols: ''

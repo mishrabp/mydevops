@@ -1,3 +1,33 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: northwind-app-configmap
+  namespace: ns2022
+data:
+  MYNWAPP_ENV: development
+  MYNWAPP_PORT: "8080"
+  MYNWAPP_ERRORLOG: "true"
+  MYNWAPP_TRACKINGLOG: "true"
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: northwind-app-secret
+  namespace: ns2022
+type: Opaque
+data:
+#  MYNWAPP_MONGO_URI: "mongodb://mongoadmin:passw0rd!@devopsmasterlinuxvm.centralus.cloudapp.azure.com:9003/northwind?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false"
+#  MYNWAPP_SessionKey: sessionkey1
+#  MYNWAPP_AuthTokenKey: authtoken1
+#  MYNWAPP_GEOCODER_API_KEY: AIzaSyAFN7pm1QA20ojk8CA2tQnXzOHB1ryRGtM
+#  base64 encoded values are set here
+  MYNWAPP_MONGO_URI: bW9uZ29kYjovL21vbmdvYWRtaW46cGFzc3cwcmQhQGRldm9wc21hc3RlcmxpbnV4dm0uY2VudHJhbHVzLmNsb3VkYXBwLmF6dXJlLmNvbTo5MDAzL25vcnRod2luZD9hdXRoU291cmNlPWFkbWluJnJlYWRQcmVmZXJlbmNlPXByaW1hcnkmYXBwbmFtZT1Nb25nb0RCJTIwQ29tcGFzcyZzc2w9ZmFsc2U=
+  MYNWAPP_SessionKey: c2Vzc2lvbmtleTE=
+  MYNWAPP_AuthTokenKey: YXV0aHRva2VuMQ==
+  MYNWAPP_GEOCODER_API_KEY: QUl6YVN5QUZON3BtMVFBMjBvams4Q0EydFFuWHpPSEIxcnlSR3RN
+
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
