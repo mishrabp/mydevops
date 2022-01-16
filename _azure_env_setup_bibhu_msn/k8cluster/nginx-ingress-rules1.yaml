@@ -1,17 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
-metadata: 
-  name: ingress-northwind
+metadata:
+  name: ingress-northwind-app-svc
 spec:
-  rules:  
-  - http:
+  ingressClassName: nginx
+  rules:
+  - host: "devopsk8masternodelinuxvm.centralus.cloudapp.azure.com"
+    http:
       paths:
-      - path: /
-        pathType: Prefix
-        backend: 
+      - pathType: Prefix
+        path: "/"
+        backend:
           service:
             name: northwind-app-svc
-            port: 
+            port:
               number: 8080
-
-
