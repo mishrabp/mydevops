@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: northwind-app-configmap
-  namespace: ingress-nginx
+  namespace: ns2022
 data:
   MYNWAPP_ENV: development
   MYNWAPP_PORT: "8080"
@@ -14,7 +14,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: northwind-app-secret
-  namespace: ingress-nginx
+  namespace: ns2022
 type: Opaque
 data:
 #  MYNWAPP_MONGO_URI: "mongodb://mongoadmin:passw0rd!@devopsmasterlinuxvm.centralus.cloudapp.azure.com:9003/northwind?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false"
@@ -32,7 +32,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: northwind-app
-  namespace: ingress-nginx
+  namespace: ns2022
   labels:
     app: northwind-app
   annotations:
@@ -82,19 +82,19 @@ spec:
           initialDelaySeconds: 10
           periodSeconds: 5
           failureThreshold: 5
-      affinity:
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms:
-            - matchExpressions: 
-              - key: "nodejs"
-                operator: "In"
-                values: 
-                - "yes"
-              - key: "dotnetcore"
-                operator: "In"
-                values: 
-                - "yes"
+#      affinity:
+#        nodeAffinity:
+#          requiredDuringSchedulingIgnoredDuringExecution:
+#            nodeSelectorTerms:
+#            - matchExpressions: 
+#              - key: "nodejs"
+#                operator: "In"
+#                values: 
+#                - "yes"
+#              - key: "dotnetcore"
+#                operator: "In"
+#                values: 
+#                - "yes"
       tolerations:
       - key: "app"
         operator: "Equal"
@@ -105,7 +105,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: northwind-app-svc
-  namespace: ingress-nginx
+  namespace: ns2022
   labels:
     svc: northwind-app-svc
 spec:

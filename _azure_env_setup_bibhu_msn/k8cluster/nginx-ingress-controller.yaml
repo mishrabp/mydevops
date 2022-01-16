@@ -39,6 +39,7 @@ metadata:
 data:
   allow-snippet-annotations: 'true'
   error-log-level: 'info'
+  access-log-off: "False"
   #access-log-path: '"/var/log/ingress-nginx/error.log"'
 ---
 # Source: ingress-nginx/templates/clusterrole.yaml

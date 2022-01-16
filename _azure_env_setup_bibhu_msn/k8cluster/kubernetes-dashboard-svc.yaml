@@ -11,7 +11,7 @@ spec:
   - port: 443
     protocol: TCP
     targetPort: 8443
-    nodePort: 30083
+    nodePort: 32767
   selector:
     k8s-app: kubernetes-dashboard
   sessionAffinity: None
