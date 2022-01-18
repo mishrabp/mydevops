@@ -1,0 +1,121 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: node-strapi-cms-api-configmap
+  namespace: ns2022
+data:
+  MYNWAPP_ENV: development
+  MYNWAPP_PORT: "8080"
+  MYNWAPP_ERRORLOG: "true"
+  MYNWAPP_TRACKINGLOG: "true"
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: node-strapi-cms-api-secret
+  namespace: ns2022
+type: Opaque
+data:
+#  MYNWAPP_MONGO_URI: "mongodb://mongoadmin:passw0rd!@devopsmasterlinuxvm.centralus.cloudapp.azure.com:9003/northwind?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false"
+#  MYNWAPP_SessionKey: sessionkey1
+#  MYNWAPP_AuthTokenKey: authtoken1
+#  MYNWAPP_GEOCODER_API_KEY: AIzaSyAFN7pm1QA20ojk8CA2tQnXzOHB1ryRGtM
+#  base64 encoded values are set here
+  MYNWAPP_MONGO_URI: bW9uZ29kYjovL21vbmdvYWRtaW46cGFzc3cwcmQhQGRldm9wc21hc3RlcmxpbnV4dm0uY2VudHJhbHVzLmNsb3VkYXBwLmF6dXJlLmNvbTo5MDAzL25vcnRod2luZD9hdXRoU291cmNlPWFkbWluJnJlYWRQcmVmZXJlbmNlPXByaW1hcnkmYXBwbmFtZT1Nb25nb0RCJTIwQ29tcGFzcyZzc2w9ZmFsc2U=
+  MYNWAPP_SessionKey: c2Vzc2lvbmtleTE=
+  MYNWAPP_AuthTokenKey: YXV0aHRva2VuMQ==
+  MYNWAPP_GEOCODER_API_KEY: QUl6YVN5QUZON3BtMVFBMjBvams4Q0EydFFuWHpPSEIxcnlSR3RN
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-strapi-cms-api
+  namespace: ns2022
+  labels:
+    app: node-strapi-cms-api
+  annotations:
+    description: "It's a MVC demo built on NodeJs"
+    developer: "Bibhu Prasad Mishra"  
+    email: "bibhup_mishra@yahoo.com"  
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: node-strapi-cms-api-pod
+      type: front-end
+  template:
+    metadata:
+      labels:
+        app: node-strapi-cms-api-pod
+        type: front-end
+    spec:
+      containers:
+      - name: node-strapi-cms-api-pod
+        image: bibhupmishra/node-strapi-cms-api
+#        envFrom:
+#        - configMapRef:
+#            name: node-strapi-cms-api-configmap
+#        - secretRef:
+#            name: node-strapi-cms-api-secret
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "50m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+        readinessProbe:
+          httpGet:
+            path: /admin
+            port: 80
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          failureThreshold: 5
+        livenessProbe:
+          httpGet:
+            path: /admin
+            port: 80
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          failureThreshold: 5
+#      affinity:
+#        nodeAffinity:
+#          requiredDuringSchedulingIgnoredDuringExecution:
+#            nodeSelectorTerms:
+#            - matchExpressions: 
+#              - key: "nodejs"
+#                operator: "In"
+#                values: 
+#                - "yes"
+#              - key: "dotnetcore"
+#                operator: "In"
+#                values: 
+#                - "yes"
+      tolerations:
+      - key: "app"
+        operator: "Equal"
+        value: "blue"
+        effect: "NoExecute"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-strapi-cms-api-svc
+  namespace: ns2022
+  labels:
+    svc: node-strapi-cms-api-svc
+spec:
+  #type: NodePort
+  selector:
+    app: node-strapi-cms-api-pod
+  ports:
+  - port: 8080
+    targetPort: 80
+    #nodePort: 30090
+
+
+
