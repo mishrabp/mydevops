@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portainer-app
+  namespace: ns2022
+spec:
+  selector:
+    matchLabels:
+      app: portainer-app-pod
+  template:
+    metadata:
+      labels:
+        app: portainer-app-pod
+    spec:
+      volumes:
+        - name: portainer-app-storage
+          persistentVolumeClaim:
+            claimName: portainer-app-local-pvc
+      containers:
+      - name: portainer-app-pod
+        image: portainer/portainer
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 9000
+        volumeMounts:
+          - mountPath: "/data"
+            name: portainer-app-storage
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: portainer-app-svc
+  namespace: ns2022
+spec:
+  selector:
+    app: portainer-app-pod
+#  type: NodePort
+  ports:
+  - port: 8080
+    targetPort: 9000
+#    nodePort: 30095
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: portainer-app-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+  namespace: ns2022
+spec:
+  rules:
+  - host: "portainer.kube9t.com"
+    http:
+      paths:
+      - path: /(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: portainer-app-svc
+            port:
+              number: 8080

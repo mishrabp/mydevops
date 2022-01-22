@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nagios-app
+  namespace: ns2022
+spec:
+  selector:
+    matchLabels:
+      app: nagios-app-pod
+  template:
+    metadata:
+      labels:
+        app: nagios-app-pod
+    spec:
+      volumes:
+        - name: nagios-app-storage
+          persistentVolumeClaim:
+            claimName: nagios-app-local-pvc
+      containers:
+      - name: nagios-app-pod
+        image: nagios/nagios
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 9000
+        volumeMounts:
+          - mountPath: "/data"
+            name: nagios-app-storage
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nagios-app-svc
+  namespace: ns2022
+spec:
+  selector:
+    app: nagios-app-pod
+#  type: NodePort
+  ports:
+  - port: 8080
+    targetPort: 9000
+#    nodePort: 30095
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nagios-app-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+  namespace: ns2022
+spec:
+  rules:
+  - host: "nagios.kube9t.com"
+    http:
+      paths:
+      - path: /(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: nagios-app-svc
+            port:
+              number: 8080

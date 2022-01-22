@@ -1,0 +1,181 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-storage
+  namespace: ns2022
+provisioner: kubernetes.io/no-provisioner
+volumeBindingMode: WaitForFirstConsumer
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: portainer-app-local-pv
+  namespace: ns2022
+  labels:
+    storage: portainer-app-local-pv
+spec:
+  capacity:
+    storage: 2Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  local:
+    path: /portainer
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: storageNode
+          operator: In
+          values:
+          - "local-drive-pv"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: portainer-app-local-pvc
+  namespace: ns2022
+spec:
+  selector:
+    matchLabels:
+      storage: portainer-app-local-pv
+  resources:
+    requests:
+      storage: 2Gi
+  volumeMode: Filesystem
+  storageClassName: local-storage
+  accessModes:
+    - ReadWriteOnce
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mongodb-local-pv
+  namespace: ns2022
+  labels:
+    storage: mongodb-local-pv
+spec:
+  capacity:
+    storage: 8Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  local:
+    path: /mongodb
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: storageNode
+          operator: In
+          values:
+          - "local-drive-pv"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mongodb-local-pvc
+  namespace: ns2022
+spec:
+  selector:
+    matchLabels:
+      storage: mongodb-local-pv
+  resources:
+    requests:
+      storage: 8Gi
+  volumeMode: Filesystem
+  storageClassName: local-storage
+  accessModes:
+    - ReadWriteOnce
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: jenkins-app-local-pv
+  namespace: ns2022
+  labels:
+    storage: jenkins-app-local-pv
+spec:
+  capacity:
+    storage: 7Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  local:
+    path: /jenkins
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: storageNode
+          operator: In
+          values:
+          - "local-drive-pv"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: jenkins-app-local-pvc
+  namespace: ns2022
+spec:
+  selector:
+    matchLabels:
+      storage: jenkins-app-local-pv
+  resources:
+    requests:
+      storage: 7Gi
+  volumeMode: Filesystem
+  storageClassName: local-storage
+  accessModes:
+    - ReadWriteOnce
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mssql-db-local-pv
+  namespace: ns2022
+  labels:
+    storage: mssql-db-local-pv
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  local:
+    path: /mssql
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: storageNode
+          operator: In
+          values:
+          - "local-drive-pv"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mssql-db-local-pvc
+  namespace: ns2022
+spec:
+  selector:
+    matchLabels:
+      storage: mssql-db-local-pv
+  resources:
+    requests:
+      storage: 10Gi
+  volumeMode: Filesystem
+  storageClassName: local-storage
+  accessModes:
+    - ReadWriteOnce
+
+

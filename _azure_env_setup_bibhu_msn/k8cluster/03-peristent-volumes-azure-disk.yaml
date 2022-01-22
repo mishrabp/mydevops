@@ -1,0 +1,61 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: static-azure-disk1
+  namespace: ns2022
+provisioner: kubernetes.io/azure-disk
+volumeBindingMode: WaitForFirstConsumer # Default is Immediate, recommended is WaitForFirstConsumer
+allowVolumeExpansion: true # Allows the user to increase PVC request size later
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: azure-disk-pv1
+  namespace: ns2022
+spec:
+  capacity:
+    storage: 32Gi
+  storageClassName: static-azure-disk1
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteMany
+  azureDisk:
+    kind: Managed
+    diskName: azureK8Disk1
+    diskURI: /subscriptions/97ef1d65-5a13-4f6a-8729-1655275dadf0/resourceGroups/MyDevOps/providers/Microsoft.Compute/disks/azureK8Disk1
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: azure-disk-pvc1
+  namespace: ns2022
+spec:
+  storageClassName: static-azure-disk1
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 32Gi
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+  namespace: ns2022
+spec:
+  volumes:
+    - name: mypod-storage
+      persistentVolumeClaim:
+        claimName: azure-disk-pvc1
+  containers:
+    - name: frontend
+      image: nginx
+      ports:
+        - containerPort: 80
+          name: "http-server"
+      volumeMounts:
+        - mountPath: "/usr/share/nginx/html"
+          name: mypod-storage

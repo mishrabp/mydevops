@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: node-strapi-cms-api-configmap
+  name: northwind-app-configmap
   namespace: ns2022
 data:
   MYNWAPP_ENV: development
@@ -13,7 +13,7 @@ data:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: node-strapi-cms-api-secret
+  name: northwind-app-secret
   namespace: ns2022
 type: Opaque
 data:
@@ -31,10 +31,10 @@ data:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: node-strapi-cms-api
+  name: northwind-app
   namespace: ns2022
   labels:
-    app: node-strapi-cms-api
+    app: northwind-app
   annotations:
     description: "It's a MVC demo built on NodeJs"
     developer: "Bibhu Prasad Mishra"  
@@ -43,42 +43,42 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: node-strapi-cms-api-pod
+      app: northwind-app-pod
       type: front-end
   template:
     metadata:
       labels:
-        app: node-strapi-cms-api-pod
+        app: northwind-app-pod
         type: front-end
     spec:
       containers:
-      - name: node-strapi-cms-api-pod
-        image: bibhupmishra/node-strapi-cms-api
-#        envFrom:
-#        - configMapRef:
-#            name: node-strapi-cms-api-configmap
-#        - secretRef:
-#            name: node-strapi-cms-api-secret
+      - name: northwind-app-pod
+        image: bibhupmishra/node-northwind-app
+        envFrom:
+        - configMapRef:
+            name: northwind-app-configmap
+        - secretRef:
+            name: northwind-app-secret
         resources:
           requests:
             memory: "64Mi"
             cpu: "50m"
           limits:
             memory: "128Mi"
-            cpu: "500m"
+            cpu: "200m"
         ports:
-        - containerPort: 80
+        - containerPort: 8080
         readinessProbe:
           httpGet:
-            path: /admin
-            port: 80
+            path: /logout
+            port: 8080
           initialDelaySeconds: 10
           periodSeconds: 5
           failureThreshold: 5
         livenessProbe:
           httpGet:
-            path: /admin
-            port: 80
+            path: /logout
+            port: 8080
           initialDelaySeconds: 10
           periodSeconds: 5
           failureThreshold: 5
@@ -104,18 +104,41 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: node-strapi-cms-api-svc
+  name: northwind-app-svc
   namespace: ns2022
   labels:
-    svc: node-strapi-cms-api-svc
+    svc: northwind-app-svc
 spec:
-  #type: NodePort
+#  type: NodePort
   selector:
-    app: node-strapi-cms-api-pod
+    app: northwind-app-pod
   ports:
   - port: 8080
-    targetPort: 80
-    #nodePort: 30090
+    targetPort: 8080
+#    nodePort: 30090
 
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: northwind-app-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+  namespace: ns2022
+spec:
+  rules:
+  - host: "northwind.kube9t.com"
+    http:
+      paths:
+      - path: /(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: northwind-app-svc
+            port:
+              number: 8080
 
 
