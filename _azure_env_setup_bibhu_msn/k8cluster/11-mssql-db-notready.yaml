@@ -7,13 +7,15 @@ data:
   ACCEPT_EULA: "Y"
   SA_PASSWORD: "passw0rd!"
   MSSQL_PID: "Express"
-
 ---
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
-  name: mssql-db
+  name: mssql
+  namespace: ns2022
 spec:
+  serviceName: mssql-h-svc
+  replicas: 1
   selector:
     matchLabels:
       app: mssql-db-pod
@@ -27,34 +29,33 @@ spec:
           persistentVolumeClaim:
             claimName: mssql-db-local-pvc
       containers:
-      - name: mssql-db-pod
-        image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
-        envFrom:
-        - configMapRef:
-            name: mssql-db-configmap
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "100m"
-        ports:
-        - containerPort: 1433
-        volumeMounts:
-          - mountPath: "/var/opt/mssql"
-            name: mssql-db-storage
+        - name: mssql-db-pod
+          image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+          envFrom:
+          - configMapRef:
+              name: mssql-db-configmap
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+          - containerPort: 1433
+          volumeMounts:
+            - mountPath: "/var/opt/mssql"
+              name: mssql-db-storage
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: mssql-db-svc
+  name: mssql-h-svc
   namespace: ns2022
 spec:
   selector:
     app: mssql-db-pod
-#  type: NodePort
   ports:
-  - port: 1433
-    targetPort: 1433
-#    nodePort: 30095
+  - port: 3306
+  clusterIP: None
+
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -75,6 +76,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: mssql-db-svc
+            name: mysql-0.mysql-h-svc.ns2022.svc.cluster.local
             port:
               number: 1433
