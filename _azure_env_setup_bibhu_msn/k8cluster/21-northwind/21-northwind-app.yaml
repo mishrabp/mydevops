@@ -8,7 +8,7 @@ data:
   MYNWAPP_PORT: "8080"
   MYNWAPP_ERRORLOG: "true"
   MYNWAPP_TRACKINGLOG: "true"
-  MYNWAPP_MONGO_URI: "mongodb://northwinduser:passw0rd!@mongodb-0.mongodb-h-svc.ns2022.svc.cluster.local:27017/northwind" 
+  MYNWAPP_MONGO_URI: "mongodb://northwinduser:passw0rd!@mongodb-0.mongodb-headless-svc.ns2022.svc.cluster.local:27017/northwind" 
 
 ---
 apiVersion: v1

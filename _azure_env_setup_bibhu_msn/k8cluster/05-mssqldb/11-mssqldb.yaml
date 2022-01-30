@@ -16,11 +16,12 @@ data:
   ACCEPT_EULA: "Y"
   SA_PASSWORD: "passw0rd!"
   MSSQL_PID: "Express"
+  SECURITY_USERS_DEFAULT_ENABLED: "true"
 ---
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: mssql
+  name: mssqldb
   namespace: ns2022
 spec:
   serviceName: mssqldb-headless-svc
@@ -33,23 +34,30 @@ spec:
       labels:
         app: mssqldb-pod
     spec:
+      terminationGracePeriodSeconds: 30
       volumes:
         - name: mssqldb-storage
           persistentVolumeClaim:
             claimName: mssqldb-local-pvc
       serviceAccountName: mssqldb-serviceaccount
       securityContext:
-        fsGroup: 1001
-        sysctls: []
+        #runAsUser: 10001
+        #capabilities: 
+        #  add: ["SYS_ADMIN"]
+        runAsUser: 10001  
+        fsGroup: 2000
+        #sysctls: [""]
       containers:
         - name: mssqldb-pod
           image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+#          image: 'mcr.microsoft.com/mssql/server:2019-CU4-ubuntu-18.04'
+#          command: ["sh", "-c", "chown -R 10001:0 /var/opt/mssql"]
           envFrom:
           - configMapRef:
               name: mssqldb-configmap
           resources:
             limits:
-              memory: "128Mi"
+              memory: "2048Mi"
               cpu: "500m"
           ports:
           - containerPort: 1433
@@ -83,5 +91,5 @@ spec:
   ports:
   - port: 3307
     targetPort: mssqldb
-    nodePort: 30091
+    nodePort: 31433
   type: NodePort
