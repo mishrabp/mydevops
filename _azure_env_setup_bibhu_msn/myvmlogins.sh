@@ -6,6 +6,8 @@ ssh -i mylinuxvms.pem azureuser@devopsnode2linuxvm.centralus.cloudapp.azure.com
 
 ssh -i mylinuxvms.pem azureuser@devopsk8masternodelinuxvm.centralus.cloudapp.azure.com
 
+ssh -i mylinuxvms.pem azureuser@devopsproxylinuxvm.centralus.cloudapp.azure.com
+
 //Copying files to linux VM
 scp  -i mylinuxvms.pem vsts-agent-linux-x64-2.184.2.tar.gz azureuser@devopsnode2linuxvm.centralus.cloudapp.azure.com:~/myagent/
 mkdir myagent && cd myagent

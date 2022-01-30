@@ -26,7 +26,7 @@ spec:
         sysctls: []
       containers:
       - name: mongodb-pod
-        image: mongo
+        image: mongo:4.4.4
         imagePullPolicy: IfNotPresent
         securityContext:
           runAsNonRoot: true
@@ -94,4 +94,45 @@ spec:
   - port: 27017
     name: mongodb
     targetPort: mongodb
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-svc
+  namespace: ns2022
+spec:
+  type: NodePort
+  selector:
+    statefulset.kubernetes.io/pod-name: mongodb-0
+    #externalTrafficPolicy: Local
+  ports:
+  - port: 27018
+    name: mongodbnode
+    targetPort: mongodb
+    nodePort: 30090
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mongodb-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+  namespace: ns2022
+spec:
+  rules:
+  - host: "mongodb.kube9t.com"
+    http:
+      paths:
+      - path: /(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: mongodb-svc
+            port:
+              number: 27018
 

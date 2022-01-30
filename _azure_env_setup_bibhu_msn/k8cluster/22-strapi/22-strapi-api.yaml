@@ -1,84 +1,82 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: northwind-app-configmap
+  name: strapi-api-configmap
   namespace: ns2022
 data:
-  MYNWAPP_ENV: development
-  MYNWAPP_PORT: "8080"
-  MYNWAPP_ERRORLOG: "true"
-  MYNWAPP_TRACKINGLOG: "true"
+  DATABASE_SRV: "false" 
+#  DATABASE_PORT: "30090"
+#  DATABASE_HOST: devopsmasterlinuxvm.centralus.cloudapp.azure.com
+  DATABASE_PORT: "27017" 
+  DATABASE_HOST: mongodb-0.mongodb-h-svc.ns2022.svc.cluster.local
+  AUTHENTICATION_DATABASE: "strapicms" 
+  DATABASE_SSL: "false"
 
 ---
 apiVersion: v1
 kind: Secret
 metadata:
-  name: northwind-app-secret
+  name: strapi-api-secret
   namespace: ns2022
 type: Opaque
 data:
-#  MYNWAPP_MONGO_URI: "mongodb://mongoadmin:passw0rd!@devopsmasterlinuxvm.centralus.cloudapp.azure.com:9003/northwind?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false"
-#  MYNWAPP_SessionKey: sessionkey1
-#  MYNWAPP_AuthTokenKey: authtoken1
-#  MYNWAPP_GEOCODER_API_KEY: AIzaSyAFN7pm1QA20ojk8CA2tQnXzOHB1ryRGtM
-#  base64 encoded values are set here
-  MYNWAPP_MONGO_URI: bW9uZ29kYjovL21vbmdvYWRtaW46cGFzc3cwcmQhQGRldm9wc21hc3RlcmxpbnV4dm0uY2VudHJhbHVzLmNsb3VkYXBwLmF6dXJlLmNvbTo5MDAzL25vcnRod2luZD9hdXRoU291cmNlPWFkbWluJnJlYWRQcmVmZXJlbmNlPXByaW1hcnkmYXBwbmFtZT1Nb25nb0RCJTIwQ29tcGFzcyZzc2w9ZmFsc2U=
-  MYNWAPP_SessionKey: c2Vzc2lvbmtleTE=
-  MYNWAPP_AuthTokenKey: YXV0aHRva2VuMQ==
-  MYNWAPP_GEOCODER_API_KEY: QUl6YVN5QUZON3BtMVFBMjBvams4Q0EydFFuWHpPSEIxcnlSR3RN
+#  DATABASE_HOST: ZGV2b3BzbWFzdGVybGludXh2bS5jZW50cmFsdXMuY2xvdWRhcHAuYXp1cmUuY29t #devopsmasterlinuxvm.centralus.cloudapp.azure.com
+  DATABASE_NAME: c3RyYXBpY21z #strapicms 
+  DATABASE_USERNAME: c3RyYXBpdXNlcg== #strapiuser 
+  DATABASE_PASSWORD: cGFzc3cwcmQh #passw0rd!
 
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: northwind-app
+  name: strapi-api
   namespace: ns2022
   labels:
-    app: northwind-app
+    app: strapi-api
   annotations:
     description: "It's a MVC demo built on NodeJs"
     developer: "Bibhu Prasad Mishra"  
     email: "bibhup_mishra@yahoo.com"  
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: northwind-app-pod
+      app: strapi-api-pod
       type: front-end
   template:
     metadata:
       labels:
-        app: northwind-app-pod
+        app: strapi-api-pod
         type: front-end
     spec:
       containers:
-      - name: northwind-app-pod
-        image: bibhupmishra/node-northwind-app
+      - name: strapi-api-pod
+        image: bibhupmishra/node-strapi-cms-api
         envFrom:
         - configMapRef:
-            name: northwind-app-configmap
+            name: strapi-api-configmap
         - secretRef:
-            name: northwind-app-secret
+            name: strapi-api-secret
         resources:
           requests:
             memory: "64Mi"
             cpu: "50m"
           limits:
-            memory: "128Mi"
-            cpu: "200m"
+            memory: "256Mi"
+            cpu: "1000m"
         ports:
-        - containerPort: 8080
+        - containerPort: 80
         readinessProbe:
           httpGet:
-            path: /logout
-            port: 8080
+            path: /admin
+            port: 80
           initialDelaySeconds: 10
           periodSeconds: 5
           failureThreshold: 5
         livenessProbe:
           httpGet:
-            path: /logout
-            port: 8080
+            path: /admin
+            port: 80
           initialDelaySeconds: 10
           periodSeconds: 5
           failureThreshold: 5
@@ -104,24 +102,24 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: northwind-app-svc
+  name: strapi-api-svc
   namespace: ns2022
   labels:
-    svc: northwind-app-svc
+    svc: strapi-api-svc
 spec:
-#  type: NodePort
+  #type: NodePort
   selector:
-    app: northwind-app-pod
+    app: strapi-api-pod
   ports:
   - port: 8080
-    targetPort: 8080
-#    nodePort: 30090
+    targetPort: 80
+    #nodePort: 30090
 
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: northwind-app-ingress
+  name: strapi-api-ingress
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
@@ -130,14 +128,14 @@ metadata:
   namespace: ns2022
 spec:
   rules:
-  - host: "northwind.kube9t.com"
+  - host: "strapi.kube9t.com"
     http:
       paths:
       - path: /(.*)
         pathType: Prefix
         backend:
           service:
-            name: northwind-app-svc
+            name: strapi-api-svc
             port:
               number: 8080
 

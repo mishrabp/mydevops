@@ -4,6 +4,10 @@ metadata:
   name: mongodb-configmap
   namespace: ns2022
 data:
+  MONGODB_USERNAME: admin
+  MONGODB_DATABASE: admin 
+  MONGODB_ROOT_PASSWORD: passw0rd! 
+  MONGODB_PASSWORD: passw0rd!
   setup.sh: |-
     #!/bin/bash
     echo "Advertised Hostname: $MONGODB_ADVERTISED_HOSTNAME"

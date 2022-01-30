@@ -1,7 +1,16 @@
 apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: mssqldb-serviceaccount
+  namespace: ns2022
+secrets:
+- name: mssqldb
+
+---  
+apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: mssql-db-configmap
+  name: mssqldb-configmap
   namespace: ns2022
 data:
   ACCEPT_EULA: "Y"
@@ -14,68 +23,65 @@ metadata:
   name: mssql
   namespace: ns2022
 spec:
-  serviceName: mssql-h-svc
+  serviceName: mssqldb-headless-svc
   replicas: 1
   selector:
     matchLabels:
-      app: mssql-db-pod
+      app: mssqldb-pod
   template:
     metadata:
       labels:
-        app: mssql-db-pod
+        app: mssqldb-pod
     spec:
       volumes:
-        - name: mssql-db-storage
+        - name: mssqldb-storage
           persistentVolumeClaim:
-            claimName: mssql-db-local-pvc
+            claimName: mssqldb-local-pvc
+      serviceAccountName: mssqldb-serviceaccount
+      securityContext:
+        fsGroup: 1001
+        sysctls: []
       containers:
-        - name: mssql-db-pod
+        - name: mssqldb-pod
           image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
           envFrom:
           - configMapRef:
-              name: mssql-db-configmap
+              name: mssqldb-configmap
           resources:
             limits:
               memory: "128Mi"
               cpu: "500m"
           ports:
           - containerPort: 1433
+            name: mssqldb
           volumeMounts:
             - mountPath: "/var/opt/mssql"
-              name: mssql-db-storage
+              name: mssqldb-storage
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: mssql-h-svc
+  name: mssqldb-headless-svc
   namespace: ns2022
 spec:
   selector:
-    app: mssql-db-pod
+    app: mssqldb-pod
   ports:
   - port: 3306
+    targetPort: mssqldb
   clusterIP: None
 
 ---
-apiVersion: networking.k8s.io/v1
-kind: Ingress
+apiVersion: v1
+kind: Service
 metadata:
-  name: mssql-db-ingress
-  annotations:
-    kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/ssl-redirect: "false"
-    nginx.ingress.kubernetes.io/use-regex: "true"
-    nginx.ingress.kubernetes.io/rewrite-target: /$1
+  name: mssqldb-svc
   namespace: ns2022
 spec:
-  rules:
-  - host: "mssql.kube9t.com"
-    http:
-      paths:
-      - path: /(.*)
-        pathType: Prefix
-        backend:
-          service:
-            name: mysql-0.mysql-h-svc.ns2022.svc.cluster.local
-            port:
-              number: 1433
+  selector:
+    app: mssqldb-pod
+  ports:
+  - port: 3307
+    targetPort: mssqldb
+    nodePort: 30091
+  type: NodePort
