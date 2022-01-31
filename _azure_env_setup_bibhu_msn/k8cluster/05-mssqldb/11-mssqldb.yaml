@@ -75,7 +75,7 @@ spec:
   selector:
     app: mssqldb-pod
   ports:
-  - port: 3306
+  - port: 1433
     targetPort: mssqldb
   clusterIP: None
 
@@ -89,7 +89,7 @@ spec:
   selector:
     app: mssqldb-pod
   ports:
-  - port: 3307
+  - port: 1433
     targetPort: mssqldb
     nodePort: 31433
   type: NodePort

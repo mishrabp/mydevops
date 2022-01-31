@@ -92,7 +92,7 @@ spec:
     app.kubernetes.io/component: mongodb-pod
   ports:
   - port: 27017
-    name: mongodb
+    name: mongodb-hs-port
     targetPort: mongodb
 
 ---
@@ -108,7 +108,7 @@ spec:
     #externalTrafficPolicy: Local
   ports:
   - port: 27017
-    name: mongodbnode
+    name: mongodb-s-port
     targetPort: mongodb
     nodePort: 30017
 
