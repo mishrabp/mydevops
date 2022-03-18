@@ -1,0 +1,7 @@
+sudo rm /etc/kubernetes/pki/apiserver.*
+sudo kubeadm init phase certs all --apiserver-advertise-address=0.0.0.0 --apiserver-cert-extra-sans=devopsk8masternodelinuxvm.centralus.cloudapp.azure.com
+sudo docker rm -f 'docker ps -q -f 'name=k8s_kube-apiserver*''
+sudo systemctl restart kubelet
+
+https://www.cidevops.com/2020/11/code-error-403-when-trying-to-access.html
+

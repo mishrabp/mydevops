@@ -1,0 +1,14 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: default-devops-rolebinding
+  namespace: ns2022
+subjects:
+  - kind: ServiceAccount
+    name: devopssa
+    apiGroup: "" #rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: default-devops-role
+  apiGroup: rbac.authorization.k8s.io
+    

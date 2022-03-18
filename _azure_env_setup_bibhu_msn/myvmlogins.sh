@@ -41,7 +41,7 @@ ssh devopsnode2linuxvm.centralus.cloudapp.azure.com
 ssh devopsk8masterlinuxvm.centralus.cloudapp.azure.com
 
 
-
+scp azureuser@devopsk8masternodelinuxvm.centralus.cloudapp.azure.com:~/.kube/config .
 
 devopsk8masterlinuxvm
 

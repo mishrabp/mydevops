@@ -1,0 +1,59 @@
+#Generate a ca.key with 2048bit:
+openssl genrsa -out ca-devops.key 2048
+
+#According to the ca.key generate a ca.crt (use -days to set the certificate effective time):
+openssl req -x509 -new -nodes -key ca-devops.key -subj "/CN=devopsk8masternodelinuxvm.centralus.cloudapp.azure.com" -days 100000 -out ca-devops.crt
+
+#Generate a server.key with 2048bit:
+openssl genrsa -out server-devops.key 2048
+
+#Create a config file for generating a Certificate Signing Request (CSR). csr.conf
+[ req ]
+default_bits = 2048
+prompt = no
+default_md = sha256
+req_extensions = req_ext
+distinguished_name = dn
+
+[ dn ]
+C = US
+ST = TX
+L = Plano
+O = personal
+OU = personal
+CN = devopsk8masternodelinuxvm.centralus.cloudapp.azure.com
+
+[ req_ext ]
+subjectAltName = kubernetes-master
+
+[ alt_names ]
+DNS.1 = kubernetes
+DNS.2 = kubernetes.default
+DNS.3 = kubernetes.default.svc
+DNS.4 = kubernetes.default.svc.cluster
+DNS.5 = kubernetes.default.svc.cluster.local
+IP.1 = devopsk8masternodelinuxvm.centralus.cloudapp.azure.com
+IP.2 = 10.1.0.10
+
+[ v3_ext ]
+authorityKeyIdentifier=keyid,issuer:always
+basicConstraints=CA:FALSE
+keyUsage=keyEncipherment,dataEncipherment
+extendedKeyUsage=serverAuth,clientAuth
+subjectAltName=kubernetes-master
+
+#Generate the certificate signing request based on the config file:
+sudo openssl req -new -key server-devops.key -out server-devops.csr -config csr.conf
+
+#Generate the server certificate using the ca.key, ca.crt and server.csr:
+openssl x509 -req -in server-devops.csr -CA ca-devops.crt -CAkey ca-devops.key \
+-CAcreateserial -out server-devops.crt -days 100000 \
+-extensions v3_ext -extfile csr.conf
+
+#View the certificate signing request:
+openssl req  -noout -text -in ./server-devops.csr
+
+#View the certificate:
+openssl x509  -noout -text -in ./server-devops.crt
+
+
