@@ -9,26 +9,35 @@
 apiVersion: v1
 kind: LimitRange
 metadata:
-  name: mem-limit-range
+  name: limit-range
   namespace: ns2022
 spec:
   limits:
-  - default:
-      memory: 1Gi
-    defaultRequest:
+  - default:         #LimitRange admission controller allocate this default limits if not specified in the container deployment file
+      cpu: "300m"
+      memory: 512Mi
+    defaultRequest:  #LimitRange admission controller allocate this default requests if not specified in the container deployment file
+      cpu: "150m"
+      memory: 64Mi
+    max:             #It is the maximum limits one can specify in the container deployment file
+      cpu: "300m"
+      memory: 512Mi
+    min:
+      cpu: "150m"    #It is the maximum requests one can specify in the container deployment file
       memory: 64Mi
     type: Container
 
 ---
 apiVersion: v1
-kind: LimitRange
+kind: ResourceQuota
 metadata:
-  name: cpu-limit-range
+  name: resoure-quota
   namespace: ns2022
 spec:
-  limits:
-  - default:
-      cpu: "1000m"
-    defaultRequest:
-      cpu: "50m"
-    type: Container
+ hard:
+    limits.cpu: "1.5"
+    limits.memory: 4Gi
+    requests.cpu: "1"
+    requests.memory: 1Gi
+    pods: "10"
+

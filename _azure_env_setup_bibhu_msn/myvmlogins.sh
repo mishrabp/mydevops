@@ -1,10 +1,10 @@
+ssh -i mylinuxvms.pem azureuser@devopsk8masternodelinuxvm.centralus.cloudapp.azure.com
+
 ssh -i mylinuxvms.pem azureuser@devopsmasterlinuxvm.centralus.cloudapp.azure.com
 
 ssh -i mylinuxvms.pem azureuser@devopsnode1linuxvm.centralus.cloudapp.azure.com
 
 ssh -i mylinuxvms.pem azureuser@devopsnode2linuxvm.centralus.cloudapp.azure.com
-
-ssh -i mylinuxvms.pem azureuser@devopsk8masternodelinuxvm.centralus.cloudapp.azure.com
 
 ssh -i mylinuxvms.pem azureuser@devopsproxylinuxvm.centralus.cloudapp.azure.com
 
@@ -30,7 +30,7 @@ touch ~/.ssh/config #create a config file
 Host *cloudapp.azure.com
   IdentityFile ~/.ssh/mylinuxvms.pem
   User azureuser
-  Password: AyushiAdriti@year
+  Password: AyushiAdriti@2021
 
 ssh devopsmasterlinuxvm.centralus.cloudapp.azure.com
 
