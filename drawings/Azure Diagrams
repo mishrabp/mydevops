@@ -1,1 +1,127 @@
-<mxfile host="app.diagrams.net" modified="2022-04-15T14:44:24.543Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36 Edg/100.0.1185.39" version="15.5.6" etag="pEIZCnD9a9qQxiHHk5NQ" type="github"><diagram id="5aY0wvRgezRCOnChRAnl">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-15T17:20:58.633Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.39" etag="tvD6Ls-t6ZgRe2iazndO" version="18.2.0" type="github">
+  <diagram id="5aY0wvRgezRCOnChRAnl" name="Page-1">
+    <mxGraphModel dx="1038" dy="547" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TAaieG-PRwkIszwUzsCw-1" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/app_services/App_Services.svg;" vertex="1" parent="1">
+          <mxGeometry x="256.75" y="216" width="35" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-5" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="1">
+          <mxGeometry x="543.25" y="524" width="32" height="42.67" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-6" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;" vertex="1" parent="1">
+          <mxGeometry x="248" y="87" width="52.5" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-12" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="1">
+          <mxGeometry x="555.75" y="532" width="32" height="42.67" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-13" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="1">
+          <mxGeometry x="709.5" y="520" width="32" height="42.67" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-14" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="1">
+          <mxGeometry x="722" y="528" width="32" height="42.67" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-17" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fontColor=#FF298D;" vertex="1" parent="1">
+          <mxGeometry x="312" y="30.67" width="478.33" height="478.33" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-15" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="1">
+          <mxGeometry x="252" y="321.84" width="32" height="42.67" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-16" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="1">
+          <mxGeometry x="264.5" y="329.84" width="32" height="42.67" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-20" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;" vertex="1" parent="1">
+          <mxGeometry x="134.25" y="60" width="52.5" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-21" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;" vertex="1" parent="1">
+          <mxGeometry x="26" y="60" width="52.5" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-22" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=pod;fontColor=#FF298D;" vertex="1" parent="1">
+          <mxGeometry x="656" y="44" width="98" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-24" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=secret;fontColor=#FF298D;" vertex="1" parent="1">
+          <mxGeometry x="583" y="268" width="97" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-25" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=ing;fontColor=#FF298D;" vertex="1" parent="1">
+          <mxGeometry x="270.5" y="251" width="75.5" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-26" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=pod;fontColor=#FF298D;" vertex="1" parent="1">
+          <mxGeometry x="364.5" y="235" width="96" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-27" value="POD: Physician Finder" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="647.5" y="119" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-29" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=pod;fontColor=#FF298D;" vertex="1" parent="1">
+          <mxGeometry x="656" y="158" width="98.5" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-31" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=svc;fontSize=9;fontColor=#FF298D;" vertex="1" parent="1">
+          <mxGeometry x="532" y="49" width="68" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-32" value="SVC: Physician Finder" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="509" y="119" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-33" value="POD: Tenet Service API" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="647.5" y="231" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-34" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=svc;fontSize=9;fontColor=#FF298D;" vertex="1" parent="1">
+          <mxGeometry x="532" y="161" width="68" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-35" value="SVC: Tenet Service API" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="509" y="231" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-36" value="Connection Secrets" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="570" y="338.67" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-37" value="POD: NGINX Reverse Proxy" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="354.5" y="310" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-38" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=cronjob;fontSize=9;fontColor=#FF298D;" vertex="1" parent="1">
+          <mxGeometry x="385.5" y="383" width="92" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-39" value="Email Watcher" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="370" y="462.33" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-40" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=cronjob;fontSize=9;fontColor=#FF298D;" vertex="1" parent="1">
+          <mxGeometry x="529" y="383" width="92" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-41" value="Physician Data Uploader" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="513.5" y="462.33" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-42" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=cronjob;fontSize=9;fontColor=#FF298D;" vertex="1" parent="1">
+          <mxGeometry x="671.5" y="383" width="92" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-43" value="GDPR Data Uploader" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="656" y="462.33" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-44" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Application_Gateways.svg;fontColor=#FF298D;" vertex="1" parent="1">
+          <mxGeometry x="78.5" y="198" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-46" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/containers/Kubernetes_Services.svg;fontColor=#FF298D;" vertex="1" parent="1">
+          <mxGeometry x="329" y="67" width="83.87" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-47" value="Kubernetes Cluster" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#392BFF;fontSize=12;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="321" y="38" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-48" value="SVC: Physician Finder" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="509" y="119" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-49" value="POD: Physician Finder" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="647.5" y="119" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-50" value="SVC: Tenet Service API" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="509" y="231" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-51" value="SVC: Physician Finder" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;strokeColor=none;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="509" y="119" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-52" value="POD: Physician Finder" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="647.5" y="119" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-53" value="SVC: Tenet Service API" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="509" y="231" width="123" height="17" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
