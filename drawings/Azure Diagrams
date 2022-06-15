@@ -1,125 +1,314 @@
-<mxfile host="app.diagrams.net" modified="2022-06-15T17:20:58.633Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.39" etag="tvD6Ls-t6ZgRe2iazndO" version="18.2.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-15T17:59:04.424Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.39" etag="WScx9cHTrmm4FLLAB5rB" version="18.2.0" type="github">
   <diagram id="5aY0wvRgezRCOnChRAnl" name="Page-1">
-    <mxGraphModel dx="1038" dy="547" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="1">
+    <mxGraphModel dx="1038" dy="547" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#FFFFFF" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="TAaieG-PRwkIszwUzsCw-1" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/app_services/App_Services.svg;" vertex="1" parent="1">
-          <mxGeometry x="256.75" y="216" width="35" height="35" as="geometry" />
+          <mxGeometry x="428" y="322" width="35" height="35" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-5" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="1">
-          <mxGeometry x="543.25" y="524" width="32" height="42.67" as="geometry" />
+          <mxGeometry x="821.25" y="589.33" width="32" height="42.67" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-6" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;" vertex="1" parent="1">
-          <mxGeometry x="248" y="87" width="52.5" height="42" as="geometry" />
+          <mxGeometry x="421" y="216" width="52.5" height="42" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-12" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="1">
-          <mxGeometry x="555.75" y="532" width="32" height="42.67" as="geometry" />
+          <mxGeometry x="833.75" y="597.33" width="32" height="42.67" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-13" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="1">
-          <mxGeometry x="709.5" y="520" width="32" height="42.67" as="geometry" />
+          <mxGeometry x="987.5" y="585.33" width="32" height="42.67" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-14" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="1">
-          <mxGeometry x="722" y="528" width="32" height="42.67" as="geometry" />
+          <mxGeometry x="1000" y="593.33" width="32" height="42.67" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-17" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fontColor=#FF298D;" vertex="1" parent="1">
-          <mxGeometry x="312" y="30.67" width="478.33" height="478.33" as="geometry" />
+          <mxGeometry x="590" y="96" width="485" height="485" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-15" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="1">
-          <mxGeometry x="252" y="321.84" width="32" height="42.67" as="geometry" />
+          <mxGeometry x="423.25" y="425" width="32" height="42.67" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-16" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="1">
-          <mxGeometry x="264.5" y="329.84" width="32" height="42.67" as="geometry" />
+          <mxGeometry x="435.75" y="433" width="32" height="42.67" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-20" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;" vertex="1" parent="1">
-          <mxGeometry x="134.25" y="60" width="52.5" height="42" as="geometry" />
+          <mxGeometry x="412.25" y="125.33" width="52.5" height="42" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-21" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;" vertex="1" parent="1">
-          <mxGeometry x="26" y="60" width="52.5" height="42" as="geometry" />
+          <mxGeometry x="304" y="125.33" width="52.5" height="42" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-22" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=pod;fontColor=#FF298D;" vertex="1" parent="1">
-          <mxGeometry x="656" y="44" width="98" height="68" as="geometry" />
+          <mxGeometry x="934" y="109.33" width="98" height="68" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-24" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=secret;fontColor=#FF298D;" vertex="1" parent="1">
-          <mxGeometry x="583" y="268" width="97" height="57" as="geometry" />
+          <mxGeometry x="861" y="333.33" width="97" height="57" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-25" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=ing;fontColor=#FF298D;" vertex="1" parent="1">
-          <mxGeometry x="270.5" y="251" width="75.5" height="49" as="geometry" />
+          <mxGeometry x="552" y="313.33" width="75.5" height="49" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-26" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=pod;fontColor=#FF298D;" vertex="1" parent="1">
-          <mxGeometry x="364.5" y="235" width="96" height="69" as="geometry" />
+          <mxGeometry x="642.5" y="295.33" width="96" height="69" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-27" value="POD: Physician Finder" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="647.5" y="119" width="123" height="17" as="geometry" />
+          <mxGeometry x="925.5" y="184.32999999999998" width="123" height="17" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-29" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=pod;fontColor=#FF298D;" vertex="1" parent="1">
-          <mxGeometry x="656" y="158" width="98.5" height="63" as="geometry" />
+          <mxGeometry x="934" y="223.32999999999998" width="98.5" height="63" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-31" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=svc;fontSize=9;fontColor=#FF298D;" vertex="1" parent="1">
-          <mxGeometry x="532" y="49" width="68" height="64" as="geometry" />
+          <mxGeometry x="810" y="114.33" width="68" height="64" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-32" value="SVC: Physician Finder" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="509" y="119" width="123" height="17" as="geometry" />
+          <mxGeometry x="787" y="184.32999999999998" width="123" height="17" as="geometry" />
         </mxCell>
-        <mxCell id="TAaieG-PRwkIszwUzsCw-33" value="POD: Tenet Service API" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="647.5" y="231" width="123" height="17" as="geometry" />
+        <mxCell id="TAaieG-PRwkIszwUzsCw-33" value="POD: Tenet Service API" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;fontSize=9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="925.5" y="296.33" width="123" height="17" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-34" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=svc;fontSize=9;fontColor=#FF298D;" vertex="1" parent="1">
-          <mxGeometry x="532" y="161" width="68" height="64" as="geometry" />
+          <mxGeometry x="810" y="226.32999999999998" width="68" height="64" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-35" value="SVC: Tenet Service API" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="509" y="231" width="123" height="17" as="geometry" />
+          <mxGeometry x="787" y="296.33" width="123" height="17" as="geometry" />
         </mxCell>
-        <mxCell id="TAaieG-PRwkIszwUzsCw-36" value="Connection Secrets" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="570" y="338.67" width="123" height="17" as="geometry" />
+        <mxCell id="TAaieG-PRwkIszwUzsCw-36" value="Connection Secrets" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;fontSize=9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="848" y="404" width="123" height="17" as="geometry" />
         </mxCell>
-        <mxCell id="TAaieG-PRwkIszwUzsCw-37" value="POD: NGINX Reverse Proxy" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="354.5" y="310" width="123" height="17" as="geometry" />
+        <mxCell id="TAaieG-PRwkIszwUzsCw-37" value="POD: NGINX Reverse Proxy" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;fontSize=9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="632.5" y="374.33" width="123" height="17" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-38" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=cronjob;fontSize=9;fontColor=#FF298D;" vertex="1" parent="1">
-          <mxGeometry x="385.5" y="383" width="92" height="65" as="geometry" />
+          <mxGeometry x="663.5" y="448.33" width="92" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="TAaieG-PRwkIszwUzsCw-39" value="Email Watcher" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="370" y="462.33" width="123" height="17" as="geometry" />
+        <mxCell id="TAaieG-PRwkIszwUzsCw-39" value="Email Watcher" style="rounded=1;whiteSpace=wrap;html=1;fontSize=9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="648" y="527.66" width="123" height="17" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-40" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=cronjob;fontSize=9;fontColor=#FF298D;" vertex="1" parent="1">
-          <mxGeometry x="529" y="383" width="92" height="65" as="geometry" />
+          <mxGeometry x="807" y="448.33" width="92" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="TAaieG-PRwkIszwUzsCw-41" value="Physician Data Uploader" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="513.5" y="462.33" width="123" height="17" as="geometry" />
+        <mxCell id="TAaieG-PRwkIszwUzsCw-41" value="Physician Data Uploader" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;fontSize=9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="791.5" y="527.66" width="123" height="17" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-42" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=cronjob;fontSize=9;fontColor=#FF298D;" vertex="1" parent="1">
-          <mxGeometry x="671.5" y="383" width="92" height="65" as="geometry" />
+          <mxGeometry x="949.5" y="448.33" width="92" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="TAaieG-PRwkIszwUzsCw-43" value="GDPR Data Uploader" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="656" y="462.33" width="123" height="17" as="geometry" />
+        <mxCell id="TAaieG-PRwkIszwUzsCw-43" value="GDPR Data Uploader" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;fontSize=9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="934" y="527.66" width="123" height="17" as="geometry" />
         </mxCell>
-        <mxCell id="TAaieG-PRwkIszwUzsCw-44" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Application_Gateways.svg;fontColor=#FF298D;" vertex="1" parent="1">
-          <mxGeometry x="78.5" y="198" width="64" height="64" as="geometry" />
+        <mxCell id="TAaieG-PRwkIszwUzsCw-44" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Application_Gateways.svg;fontColor=#FF298D;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="188" y="307.5" width="64" height="64" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-46" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/containers/Kubernetes_Services.svg;fontColor=#FF298D;" vertex="1" parent="1">
-          <mxGeometry x="329" y="67" width="83.87" height="74" as="geometry" />
+          <mxGeometry x="607" y="132.33" width="68.76" height="60.67" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-47" value="Kubernetes Cluster" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#392BFF;fontSize=12;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="321" y="38" width="123" height="17" as="geometry" />
+          <mxGeometry x="599" y="103.33" width="123" height="17" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-48" value="SVC: Physician Finder" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="509" y="119" width="123" height="17" as="geometry" />
+          <mxGeometry x="787" y="184.32999999999998" width="123" height="17" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-49" value="POD: Physician Finder" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="647.5" y="119" width="123" height="17" as="geometry" />
+          <mxGeometry x="925.5" y="184.32999999999998" width="123" height="17" as="geometry" />
         </mxCell>
         <mxCell id="TAaieG-PRwkIszwUzsCw-50" value="SVC: Tenet Service API" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="509" y="231" width="123" height="17" as="geometry" />
+          <mxGeometry x="787" y="296.33" width="123" height="17" as="geometry" />
         </mxCell>
-        <mxCell id="TAaieG-PRwkIszwUzsCw-51" value="SVC: Physician Finder" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;strokeColor=none;fillColor=default;" vertex="1" parent="1">
-          <mxGeometry x="509" y="119" width="123" height="17" as="geometry" />
+        <mxCell id="TAaieG-PRwkIszwUzsCw-51" value="SVC: Physician Finder" style="rounded=1;whiteSpace=wrap;html=1;fontSize=9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="787" y="184.32999999999998" width="123" height="17" as="geometry" />
         </mxCell>
-        <mxCell id="TAaieG-PRwkIszwUzsCw-52" value="POD: Physician Finder" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="647.5" y="119" width="123" height="17" as="geometry" />
+        <mxCell id="TAaieG-PRwkIszwUzsCw-52" value="POD: Physician Finder" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;fontSize=9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="925.5" y="184.32999999999998" width="123" height="17" as="geometry" />
         </mxCell>
-        <mxCell id="TAaieG-PRwkIszwUzsCw-53" value="SVC: Tenet Service API" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF298D;fontSize=9;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="509" y="231" width="123" height="17" as="geometry" />
+        <mxCell id="TAaieG-PRwkIszwUzsCw-53" value="SVC: Tenet Service API" style="rounded=1;whiteSpace=wrap;html=1;fontSize=9;strokeColor=default;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="787" y="296.33" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-54" value="&amp;nbsp;Sitefinity UI - App Service" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;fontSize=12;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="363.83" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-55" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/app_services/App_Service_Domains.svg;fontColor=#000000;strokeColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="5" y="311.83" width="65" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-56" value="Consumer Website Architecture" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#392BFF;fontSize=40;fontStyle=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="338" y="23" width="639" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-60" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=40;strokeColor=#FF3333;fillColor=#CC0066;rotation=-90;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="662" y="314" width="20" height="764" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-63" value="VNet - eTenet" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Virtual_Networks_Classic.svg;rounded=1;fontColor=#000000;strokeColor=default;fillColor=none;opacity=65;" vertex="1" parent="1">
+          <mxGeometry x="639" y="676" width="67" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-64" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/DNS_Zones.svg;rounded=1;fontColor=#000000;strokeColor=#FF3333;strokeWidth=1;fillColor=#CC0066;" vertex="1" parent="1">
+          <mxGeometry x="92" y="306.33" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-66" value="" style="endArrow=classic;html=1;rounded=0;fontSize=40;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;exitX=0.981;exitY=0.523;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-64" target="TAaieG-PRwkIszwUzsCw-44">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="340" as="sourcePoint" />
+            <mxPoint x="438" y="238" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-68" value="" style="endArrow=classic;html=1;rounded=0;fontSize=40;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;startArrow=none;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-103" target="TAaieG-PRwkIszwUzsCw-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160.7840000000001" y="349.8019999999999" as="sourcePoint" />
+            <mxPoint x="198" y="349.63962089690244" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-69" value="" style="endArrow=classic;html=1;rounded=0;fontSize=40;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;" edge="1" parent="1" target="TAaieG-PRwkIszwUzsCw-64">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="69" y="341" as="sourcePoint" />
+            <mxPoint x="88" y="341" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-71" value="" style="endArrow=classic;html=1;rounded=0;fontSize=40;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;entryX=0.711;entryY=0.009;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-1" target="TAaieG-PRwkIszwUzsCw-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="261.616" y="348.98800000000006" as="sourcePoint" />
+            <mxPoint x="438" y="349.4537868003548" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-72" value="" style="endArrow=classic;html=1;rounded=0;fontSize=40;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="464" y="338" as="sourcePoint" />
+            <mxPoint x="557" y="338" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-73" value="" style="endArrow=classic;html=1;rounded=0;fontSize=40;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;entryX=0.111;entryY=0.676;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="TAaieG-PRwkIszwUzsCw-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="625" y="342" as="sourcePoint" />
+            <mxPoint x="567" y="348" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-74" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/app_services/CDN_Profiles.svg;rounded=1;fontColor=#000000;strokeColor=#FF3333;strokeWidth=1;fillColor=#CC0066;" vertex="1" parent="1">
+          <mxGeometry x="382" y="216" width="68" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-75" value="CDN - Static Content" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;fontSize=12;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="312.75" y="266" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-76" value="" style="endArrow=classic;html=1;rounded=0;fontSize=40;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;entryX=0.484;entryY=0.986;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.514;exitY=-0.154;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-1" target="TAaieG-PRwkIszwUzsCw-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="455.60228909845046" y="367" as="sourcePoint" />
+            <mxPoint x="456.00199999999995" y="435.38403000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-82" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;entryX=0.005;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-26" target="TAaieG-PRwkIszwUzsCw-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="695" y="295" as="sourcePoint" />
+            <mxPoint x="745" y="245" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="691" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-84" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;entryX=0.988;entryY=0.452;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.812;exitY=0.642;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-29" target="TAaieG-PRwkIszwUzsCw-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1069" y="594" as="sourcePoint" />
+            <mxPoint x="820.3399999999999" y="276.65" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1065" y="591" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-85" value="&amp;nbsp;Sitefinity Db" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;fontSize=12;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="382" y="487" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-86" value="Tenet Service Db" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;fontSize=12;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="952" y="643" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-88" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-22" target="TAaieG-PRwkIszwUzsCw-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="736.788" y="349.00699999999995" as="sourcePoint" />
+            <mxPoint x="820.3399999999999" y="276.65" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-87" value="Physician Service Db" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;fontSize=12;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="787" y="646" width="123" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-89" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;entryX=0.005;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-26" target="TAaieG-PRwkIszwUzsCw-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="736.788" y="349.00699999999995" as="sourcePoint" />
+            <mxPoint x="820.3399999999999" y="276.65" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="691" y="231" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-92" value="" style="endArrow=classic;html=1;rounded=0;fontSize=40;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;exitX=0.995;exitY=0.63;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="635" y="352" as="sourcePoint" />
+            <mxPoint x="936" y="267" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-93" value="" style="endArrow=classic;html=1;rounded=0;fontSize=40;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;dashed=1;" edge="1" parent="1" target="TAaieG-PRwkIszwUzsCw-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="879" y="150" as="sourcePoint" />
+            <mxPoint x="946" y="277" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="915" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-94" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;rounded=0;dashed=1;fontSize=12;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-29" target="TAaieG-PRwkIszwUzsCw-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="695" y="529" as="sourcePoint" />
+            <mxPoint x="745" y="479" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-96" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;rounded=0;dashed=1;fontSize=12;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-42" target="TAaieG-PRwkIszwUzsCw-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="993.25" y="296.3299999999999" as="sourcePoint" />
+            <mxPoint x="919.5" y="343.3299999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="920" y="401" />
+              <mxPoint x="1003" y="421" />
+              <mxPoint x="1061" y="341" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-98" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;rounded=0;dashed=1;fontSize=12;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-40">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1005.5" y="458.3299999999999" as="sourcePoint" />
+            <mxPoint x="909" y="391" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="885" y="401" />
+              <mxPoint x="1013" y="431" />
+              <mxPoint x="1071" y="351" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-99" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;rounded=0;dashed=1;fontSize=12;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;exitX=0.505;exitY=0.149;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1015.5" y="468.3299999999999" as="sourcePoint" />
+            <mxPoint x="908" y="397" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="812" y="401" />
+              <mxPoint x="1023" y="441" />
+              <mxPoint x="1081" y="361" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-100" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;entryX=-0.092;entryY=0.264;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-40" target="TAaieG-PRwkIszwUzsCw-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700.5" y="305.3299999999999" as="sourcePoint" />
+            <mxPoint x="820.3399999999999" y="276.65" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="777" y="553" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-102" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;rounded=0;fontSize=12;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;entryX=0.028;entryY=0.62;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.171;exitY=0.656;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-42" target="TAaieG-PRwkIszwUzsCw-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="827" y="500.8299999999999" as="sourcePoint" />
+            <mxPoint x="850.806" y="628.5948799999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="924" y="561" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-103" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Firewalls.svg;rounded=1;fontColor=#000000;strokeColor=#FF3333;strokeWidth=1;fillColor=#CC0066;" vertex="1" parent="1">
+          <mxGeometry x="274" y="308.5" width="71" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TAaieG-PRwkIszwUzsCw-104" value="" style="endArrow=none;html=1;rounded=0;fontSize=40;fontColor=#000000;strokeColor=#3333FF;strokeWidth=2;exitX=0.508;exitY=0.994;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="TAaieG-PRwkIszwUzsCw-44" target="TAaieG-PRwkIszwUzsCw-103">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="251.61599999999999" y="338.98800000000006" as="sourcePoint" />
+            <mxPoint x="428" y="339.4537868003548" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
