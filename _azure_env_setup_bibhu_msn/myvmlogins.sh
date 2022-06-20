@@ -1,4 +1,4 @@
-ssh -i mylinuxvms.pem azureuser@devopsk8masternodelinuxvm.centralus.cloudapp.azure.com
+ssh -i mylinuxvms.pem azureuser@devopsk8masterlinuxvm.centralus.cloudapp.azure.com
 
 ssh -i mylinuxvms.pem azureuser@devopsmasterlinuxvm.centralus.cloudapp.azure.com
 
@@ -41,7 +41,7 @@ ssh devopsnode2linuxvm.centralus.cloudapp.azure.com
 ssh devopsk8masterlinuxvm.centralus.cloudapp.azure.com
 
 
-scp azureuser@devopsk8masternodelinuxvm.centralus.cloudapp.azure.com:~/.kube/config .
+scp azureuser@devopsk8masterlinuxvm.centralus.cloudapp.azure.com:~/.kube/config .
 
 devopsk8masterlinuxvm
 
