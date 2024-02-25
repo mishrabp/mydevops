@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-25T10:38:56.817Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="fooWCHtWNsZRUndVgs4V" version="23.1.5" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2024-02-25T10:39:25.351Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="i97cCqRrDps83C9QSNN6" version="23.1.5" type="github" pages="7">
   <diagram id="5aY0wvRgezRCOnChRAnl" name="CWS">
     <mxGraphModel dx="1002" dy="535" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="#FFFFFF" math="0" shadow="1">
       <root>
@@ -972,13 +972,13 @@
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aJQJf6O9_Ly4Z09gu1kQ-12" target="aJQJf6O9_Ly4Z09gu1kQ-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-12" value="Authorization&lt;br&gt;Policy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-12" value="Authorization&lt;br&gt;Policy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="428" y="545" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-13" value="Requirement1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-13" value="Requirement1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="343" y="627" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-14" value="Requirement2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-14" value="Requirement2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="509" y="627" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.572;entryY=0.04;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="aJQJf6O9_Ly4Z09gu1kQ-12" target="aJQJf6O9_Ly4Z09gu1kQ-14">
@@ -993,13 +993,13 @@
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aJQJf6O9_Ly4Z09gu1kQ-19" target="aJQJf6O9_Ly4Z09gu1kQ-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-19" value="IAuthorizationService" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-19" value="IAuthorizationService" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="71" y="518" width="178.06" height="32" as="geometry" />
         </mxCell>
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aJQJf6O9_Ly4Z09gu1kQ-20" target="aJQJf6O9_Ly4Z09gu1kQ-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-20" value="Requirement1AuthorizationHandler" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-20" value="Requirement1AuthorizationHandler" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="56" y="626" width="208" height="32" as="geometry" />
         </mxCell>
       </root>
