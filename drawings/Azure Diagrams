@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-25T10:58:38.108Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="Yrm8SI6mDPNgw8p_VZMw" version="23.1.5" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2024-02-25T12:08:34.145Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="u1onkBireXBItulPYn6R" version="23.1.5" type="github" pages="7">
   <diagram id="5aY0wvRgezRCOnChRAnl" name="CWS">
     <mxGraphModel dx="1002" dy="535" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="#FFFFFF" math="0" shadow="1">
       <root>
@@ -942,7 +942,7 @@
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-2" value="Home Page&lt;br&gt;(Anonymous)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
           <mxGeometry x="645" y="265" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-3" value="Admin Page" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-3" value="Admin Page" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
           <mxGeometry x="645" y="357" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-4" value="HR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
@@ -966,19 +966,25 @@
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="aJQJf6O9_Ly4Z09gu1kQ-7" target="aJQJf6O9_Ly4Z09gu1kQ-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aJQJf6O9_Ly4Z09gu1kQ-7" target="aJQJf6O9_Ly4Z09gu1kQ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aJQJf6O9_Ly4Z09gu1kQ-7" target="aJQJf6O9_Ly4Z09gu1kQ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-7" value="Authorization&lt;br&gt;Middleware" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="332" y="367" width="141" height="40" as="geometry" />
         </mxCell>
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aJQJf6O9_Ly4Z09gu1kQ-12" target="aJQJf6O9_Ly4Z09gu1kQ-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-12" value="Authorization&lt;br&gt;Policy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-12" value="Authorization&lt;br&gt;Policies" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="468" y="512" width="171" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-13" value="Must be from HR Departmenet&lt;br&gt;(Claim Department == HR)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-13" value="Must be from HR Departmenet&lt;br&gt;(Claim Department == HR)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="343" y="627" width="199" height="56" as="geometry" />
         </mxCell>
-        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-14" value="Must be an Admin&lt;br&gt;(Claim Role == Admin)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-14" value="Must be an Admin&lt;br&gt;(Claim Role == Admin)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="607" y="628" width="186" height="55" as="geometry" />
         </mxCell>
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.572;entryY=0.04;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="aJQJf6O9_Ly4Z09gu1kQ-12" target="aJQJf6O9_Ly4Z09gu1kQ-14">
@@ -1001,13 +1007,13 @@
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aJQJf6O9_Ly4Z09gu1kQ-20" target="aJQJf6O9_Ly4Z09gu1kQ-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-20" value="Requirement1AuthorizationHandler" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-20" value="Policy1AuthorizationHandler" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="56" y="639" width="208" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-25" value="Requirement1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-25" value="Policy1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="365" y="589" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-26" value="Requirement2" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-26" value="Policy2" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="733" y="587" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
