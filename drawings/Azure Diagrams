@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-25T12:08:55.955Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="wgOWPSLFmMP-BdVJB3K3" version="23.1.5" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2024-02-25T12:12:55.993Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="rKfHF3vHwqGhwoiNc2rK" version="23.1.5" type="github" pages="7">
   <diagram id="5aY0wvRgezRCOnChRAnl" name="CWS">
     <mxGraphModel dx="1002" dy="535" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="#FFFFFF" math="0" shadow="1">
       <root>
@@ -957,6 +957,9 @@
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aJQJf6O9_Ly4Z09gu1kQ-6" target="aJQJf6O9_Ly4Z09gu1kQ-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="aJQJf6O9_Ly4Z09gu1kQ-6" target="aJQJf6O9_Ly4Z09gu1kQ-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-6" value="Authetntication&lt;br&gt;Middleware" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="244" y="367" width="141" height="40" as="geometry" />
         </mxCell>
@@ -995,6 +998,9 @@
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-17" value="Authentication and Authorization Flow" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="204" y="22" width="379" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aJQJf6O9_Ly4Z09gu1kQ-18" target="aJQJf6O9_Ly4Z09gu1kQ-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-18" value="Login Page" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
           <mxGeometry x="645" y="147" width="120" height="60" as="geometry" />
         </mxCell>
@@ -1015,6 +1021,15 @@
         </mxCell>
         <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-26" value="Policy2" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="655" y="598" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-30" value="Authenticator&lt;br&gt;(Authenticates Against IDP, Creates Principal, Sends to Cookie)&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="815" y="129" width="225" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aJQJf6O9_Ly4Z09gu1kQ-32" target="aJQJf6O9_Ly4Z09gu1kQ-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aJQJf6O9_Ly4Z09gu1kQ-32" value="Not Authenticated?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="242" y="124" width="146" height="106" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
