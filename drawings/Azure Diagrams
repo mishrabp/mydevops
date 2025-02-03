@@ -1069,6 +1069,41 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="d2s5ltSrdcxdFxY1z5qd-1" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/integration/Event_Grid_Subscriptions.svg;" vertex="1" parent="1">
+          <mxGeometry x="330" y="222" width="67" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d2s5ltSrdcxdFxY1z5qd-2" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;" vertex="1" parent="1">
+          <mxGeometry x="80" y="110" width="65" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="d2s5ltSrdcxdFxY1z5qd-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d2s5ltSrdcxdFxY1z5qd-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="256" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d2s5ltSrdcxdFxY1z5qd-3" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;" vertex="1" parent="1">
+          <mxGeometry x="80" y="230" width="65" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="d2s5ltSrdcxdFxY1z5qd-4" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;" vertex="1" parent="1">
+          <mxGeometry x="80" y="350" width="65" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="d2s5ltSrdcxdFxY1z5qd-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d2s5ltSrdcxdFxY1z5qd-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="329" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="113" y="190" />
+              <mxPoint x="330" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d2s5ltSrdcxdFxY1z5qd-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.012;entryY=0.453;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="d2s5ltSrdcxdFxY1z5qd-4" target="d2s5ltSrdcxdFxY1z5qd-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2s5ltSrdcxdFxY1z5qd-8" value="Expiry Event" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="150" width="80" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="d2s5ltSrdcxdFxY1z5qd-9" value="Primary_Key - Expiry Date&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="30" width="180" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
